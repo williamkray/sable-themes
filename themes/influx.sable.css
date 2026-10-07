@@ -6,12 +6,13 @@ author: userspring
 kind: dark
 contrast: high
 tags: purple, dark grey · recommended tweaks: Rounded Sable
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/influx.sable.css
 */
 
 @font-face {
   font-family: Noto Sans;
   font-weight: 200 700;
-  src: url("https://raw.githubusercontent.com/SableClient/themes/main/fonts/Noto_Sans/NotoSans-Variable.ttf") format('truetype-variations');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/fonts/Noto_Sans/NotoSans-Variable.ttf") format('truetype-variations');
   font-display: swap; 
 }
 :root {
