@@ -5,8 +5,7 @@ name: Influx
 author: userspring
 kind: dark
 contrast: high
-tags: purple, blue, dark grey · recommended tweaks: Rounded Sable
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/influx.sable.css
+tags: purple, dark grey · recommended tweaks: Rounded Sable
 */
 
 @font-face {
@@ -15,27 +14,12 @@ fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/i
   src: url("https://raw.githubusercontent.com/SableClient/themes/main/fonts/Noto_Sans/NotoSans-Variable.ttf") format('truetype-variations');
   font-display: swap; 
 }
-body {
-  --custom-font-size1: 15px;
-      font-size: var(--custom-font-size1);
-    --_164xfgea: var(--custom-font-size1);
-    --_164xfge6: var(--custom-font-size1);
-    --_164xfge5: var(--custom-font-size1);
-    --_164xfge7: var(--custom-font-size1);
-  --custom-line-height: 1.45;
-    line-height: var(--custom-line-height);
-  --custom-font-size2: 13.5px;
-    --_164xfgeb: var(--custom-font-size2);
-}
-.layout_MessageTextBody_jumboEmoji_none__1r9nvas1b, [class="Editor_Editor__1a1o97c0 _1mqalmd1 _1mqalmd0 "] *:not(button *) {
-  font-size: var(--custom-font-size1) !important;
-}
-button:not([class*="styles_EmojiItem__1n9oudok"]) {
-  font-size: var(--custom-font-size2) !important;
+:root {
+  --text-scale: 0.938 !important;
 }
 
 body.sable-remote-theme {
-  --font-secondary: 'Noto Sans', 'Twemoji', 'Nunito Variable', system-ui, -apple-system, sans-serif;
+  font-family: 'Noto Sans', 'Twemoji', 'Nunito Variable', system-ui, -apple-system, sans-serif;
 
   /* Background */
   --sable-bg-container: hsl(225, 12%, 10.3%);
@@ -125,7 +109,7 @@ body.sable-remote-theme {
 }
 
 /*** Left Panel Buttons ***/
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar_outlined"]:not([class*="UserQuickTools"] *) {
+body.sable-remote-theme [class*="nav-tab-outlined"]:not([aria-label="Quick tools"] *) {
   transition: 
   border-radius .23s ease-in-out, 
   border-width .23s ease-in-out, 
@@ -133,7 +117,7 @@ body.sable-remote-theme button[class*="Sidebar_SidebarAvatar_outlined"]:not([cla
   border: 1px dashed hsla(245, 0%, 45%, 100%) !important;
   border-radius: 50% !important;
 }
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar_outlined"]:not([class*="UserQuickTools"] *):hover {
+body.sable-remote-theme [class*="nav-tab-outlined"]:not([aria-label="Quick tools"] *):hover {
   border: 2px dashed hsla(245, 0%, 65%, 100%) !important;
   border-radius: 30% !important;
   transition: 
@@ -143,48 +127,97 @@ body.sable-remote-theme button[class*="Sidebar_SidebarAvatar_outlined"]:not([cla
 }
 
 /*** Left Panel Spaces ***/
-body.sable-remote-theme button[class="_1684mq51 _1mqalmd1 _1mqalmd0 _1bugis90 _1bugis91 _1684mq54 cpipac3 Sidebar_SidebarAvatar__vs60p5b Sidebar_SidebarAvatar_size_400__vs60p5e"] {
+body.sable-remote-theme [class*="space-item"] * {
   transition: border-radius .1s ease-in-out !important;
   border-radius: 37% !important;
 }
-body.sable-remote-theme button[class="_1684mq51 _1mqalmd1 _1mqalmd0 _1bugis90 _1bugis91 _1684mq54 cpipac3 Sidebar_SidebarAvatar__vs60p5b Sidebar_SidebarAvatar_size_400__vs60p5e"]:hover {
+body.sable-remote-theme [class*="space-item"] *:hover {
   border-radius: 27% !important;
 }
 
 /*** Bottom Toolbar ***/
-body.sable-remote-theme [class*="UserQuickTools"] * {
+body.sable-remote-theme [aria-label="Quick tools"] * {
   border: none !important;
   border-radius: 50% !important;
 }
 
 /*** Rounder Avatars ***/
-body.sable-remote-theme img[class="_1684mq5c _1mqalmd1 _1mqalmd0 UserAvatar_UserAvatar__1f07iat0"], :has([data-sentry-component="userFallbackIcon"]) {
-  border-radius: 11.2px;
+body.sable-remote-theme [class="avatar-image media-image svelte-c4qk4x"] *, [class="avatar-fallback"] {
+  border-radius: 11.2px !important;
 }
 
 /*** Custom Colors ***/
-body.sable-remote-theme [class*="RoomTimeline_TimelineFloat_position_Bottom"] * {
-  background-color: hsl(0, 80%, 54%) !important; /*Jump-to-Latest*/
+body.sable-remote-theme [class="unread svelte-161aneu"] *, .unread.svelte-161aneu:before {
+  background-color: hsl(0, 80%, 54%) !important; /*New-Messages*/
   border-color: hsl(0, 70%, 40%) !important;
 }
 
-body.sable-remote-theme [class*="Sidebar_SidebarItemBadge_mode_count__vs60p59"] *:not([class="_1xny9xl0 _1mqalmd1 _1mqalmd0 _1xny9xlg _1xny9xlr"]) {
+body.sable-remote-theme [class="pin-badge svelte-qbrvv8"], [class*="unread-badge-count"] {
   background-color: hsl(0, 80%, 54%) !important; /*Ping Notif */
   color: hsl(225, 10%, 93%) !important;
 }
 
-body.sable-remote-theme [class*="Reaction_Reaction__1ofy2965 _1bugis90"][aria-pressed="true"] {
+body.sable-remote-theme [class="reaction choice svelte-190moon"][aria-pressed="true"] {
   background-color: hsl(240, 35%, 27%) !important; /*React ON*/
   border-color: hsl(240, 65%, 55%) !important;
 }
 
-body.sable-remote-theme [class="_13qe89m6 _1mqalmd1 _1mqalmd0 _1bugis90 _1bugis91 _13qe89ma _13qe89mc _13qe89mg cpipac2"] {
-  background-color: hsl(245, 70%, 54%) !important; /*EmojiBoard Tab*/
-  color: hsl(225, 10%, 93%) !important;
+body.sable-remote-theme [class*="icon-button-medium jump-to-latest"] {
+  background-color: hsl(245, 70%, 54%) !important; /*Jump Latest*/
+  border: none !important;
 }
 
-.CustomHtml_Mention__1t9vo33i {
-    box-shadow: none; /*Mentions*/
-    background-color: hsl(200, 40%, 18%);
-    color: hsl(200, 90%, 74%);
+body.sable-remote-theme [class="formatted-body svelte-u6rajk"] {
+[data-matrix-link="room"], [data-matrix-link="user"], [data-matrix-link="event"] {
+    background: hsl(195, 40%, 18%) !important; /*Mentions*/
+    color: hsl(195, 90%, 74%) !important;
+    border: none !important;
+}}
+
+body.sable-remote-theme [class*="mention-loud"] [class="formatted-body svelte-u6rajk"] { 
+  [data-matrix-link="room"], [data-matrix-link="user"], [data-matrix-link="event"], [data-mx-room-mention] {
+    background: var(--warn-container-active) !important; /*Mention Loud*/
+    color: var(--warn-on-container) !important;
+    border: var(--border-width) solid var(--sable-warn-container-line) !important;
+}}
+
+body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [data-settings-link] {
+    background: hsl(245, 70%, 54%) !important; /*Mention Settings*/
+    color: hsl(225, 10%, 93%) !important;
+    border: none !important;
+}
+
+body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [href]:not([data-settings-link], [class*="mention-loud"] *) {
+    color: hsl(195, 90%, 74%) !important; /*Links*/
+}
+
+/*** Embed Colors ***/
+.choice.choice[data-selected=true] {
+    background: hsl(235, 10%, 26%) !important;
+}
+body.sable-remote-theme [class="youtube-header svelte-r7kdal"]
+ {
+    background: hsl(0, 95%, 54%);
+}
+body.sable-remote-theme [class="tiktok-header svelte-1ik66a8"]
+ {
+    background: radial-gradient(circle at bottom right, hsl(0, 0%, 25%), hsl(0, 0%, 0%) 60%) fixed;
+}
+body.sable-remote-theme [class="tiktok-title svelte-1ik66a8"]
+ {
+  background: hsl(0, 0%, 0%);
+    filter: drop-shadow(2px 2px 0 #FE2C55) 
+          drop-shadow(-2px -2px 0 #25F4EE);
+}
+
+body.sable-remote-theme [class="instagram-header svelte-13mnb7o"]
+ {
+    background: linear-gradient(
+  90deg, 
+  #6559ca 0%, 
+  #bc318f 30%, 
+  #e33f5f 50%, 
+  #f77638 70%, 
+  #fec66d 100%
+);
 }
