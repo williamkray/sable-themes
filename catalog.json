@@ -5,268 +5,268 @@
   "themes": [
     {
       "basename": "accord",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/accord.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/accord.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/accord.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/accord.sable.css"
     },
     {
       "basename": "amethyst",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/amethyst.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/amethyst.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/amethyst.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/amethyst.sable.css"
     },
     {
       "basename": "black",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/black.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/black.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/black.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/black.sable.css"
     },
     {
       "basename": "blue-nord",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/blue-nord.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/blue-nord.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/blue-nord.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/blue-nord.sable.css"
     },
     {
       "basename": "butter",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/butter.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/butter.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/butter.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/butter.sable.css"
     },
     {
       "basename": "catppuccin-frappe",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-frappe.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-frappe.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-frappe.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-frappe.sable.css"
     },
     {
       "basename": "catppuccin-latte",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-latte.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-latte.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-latte.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-latte.sable.css"
     },
     {
       "basename": "catppuccin-macchiato",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-macchiato.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-macchiato.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-macchiato.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-macchiato.sable.css"
     },
     {
       "basename": "catppuccin-mocha",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-mocha.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/catppuccin-mocha.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-mocha.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/catppuccin-mocha.sable.css"
     },
     {
       "basename": "cinny-butter",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-butter.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-butter.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-butter.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-butter.sable.css"
     },
     {
       "basename": "cinny-dark",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-dark.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-dark.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-dark.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-dark.sable.css"
     },
     {
       "basename": "cinny-light",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-light.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-light.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-light.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-light.sable.css"
     },
     {
       "basename": "cinny-silver",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-silver.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cinny-silver.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-silver.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cinny-silver.sable.css"
     },
     {
       "basename": "cyber-noir",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cyber-noir.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cyber-noir.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyber-noir.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyber-noir.sable.css"
     },
     {
       "basename": "cyberpunk",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cyberpunk.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cyberpunk.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyberpunk.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyberpunk.sable.css"
     },
     {
       "basename": "cyberpunk-77",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cyberpunk-77.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/cyberpunk-77.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyberpunk-77.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyberpunk-77.sable.css"
     },
     {
       "basename": "dark",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/dark.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/dark.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/dark.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/dark.sable.css"
     },
     {
       "basename": "gruvdark",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/gruvdark.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/gruvdark.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/gruvdark.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/gruvdark.sable.css"
     },
     {
       "basename": "horizon-dark",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/horizon-dark.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/horizon-dark.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/horizon-dark.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/horizon-dark.sable.css"
     },
     {
       "basename": "horizon-light",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/horizon-light.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/horizon-light.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/horizon-light.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/horizon-light.sable.css"
     },
     {
       "basename": "influx",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/influx.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/influx.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/influx.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/influx.sable.css"
     },
     {
       "basename": "light",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/light.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/light.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/light.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/light.sable.css"
     },
     {
       "basename": "matrix-terminal",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/matrix-terminal.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/matrix-terminal.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/matrix-terminal.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/matrix-terminal.sable.css"
     },
     {
       "basename": "midnight-fairy",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/midnight-fairy.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/midnight-fairy.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/midnight-fairy.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/midnight-fairy.sable.css"
     },
     {
       "basename": "msdos-terminal",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/msdos-terminal.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/msdos-terminal.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/msdos-terminal.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/msdos-terminal.sable.css"
     },
     {
       "basename": "neon-city",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city.sable.css"
     },
     {
       "basename": "neon-city-blue",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-blue.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-blue.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-blue.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-blue.sable.css"
     },
     {
       "basename": "neon-city-green",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-green.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-green.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-green.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-green.sable.css"
     },
     {
       "basename": "neon-city-light",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-light.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-light.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-light.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-light.sable.css"
     },
     {
       "basename": "neon-city-red",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-red.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-red.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-red.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-red.sable.css"
     },
     {
       "basename": "os-mac9",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/os-mac9.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/os-mac9.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os-mac9.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os-mac9.sable.css"
     },
     {
       "basename": "os-win95",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/os-win95.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/os-win95.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os-win95.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os-win95.sable.css"
     },
     {
       "basename": "pitch-black",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/pitch-black.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/pitch-black.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/pitch-black.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/pitch-black.sable.css"
     },
     {
       "basename": "rose-pine",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/rose-pine.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/rose-pine.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/rose-pine.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/rose-pine.sable.css"
     },
     {
       "basename": "rose-pine-dawn",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/rose-pine-dawn.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/rose-pine-dawn.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/rose-pine-dawn.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/rose-pine-dawn.sable.css"
     },
     {
       "basename": "rose-pine-moon",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/rose-pine-moon.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/rose-pine-moon.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/rose-pine-moon.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/rose-pine-moon.sable.css"
     },
     {
       "basename": "shark-deep-blue",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/shark-deep-blue.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/shark-deep-blue.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/shark-deep-blue.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/shark-deep-blue.sable.css"
     },
     {
       "basename": "silver",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/silver.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/silver.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/silver.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/silver.sable.css"
     },
     {
       "basename": "terminal-bluescreen",
-      "previewUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/terminal-bluescreen.preview.sable.css",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/themes/terminal-bluescreen.sable.css"
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/terminal-bluescreen.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/terminal-bluescreen.sable.css"
     }
   ],
   "tweaks": [
     {
       "basename": "Atkinson-Hyperlegible",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/Atkinson-Hyperlegible.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/Atkinson-Hyperlegible.sable.css"
     },
     {
       "basename": "calm-buttons",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/calm-buttons.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/calm-buttons.sable.css"
     },
     {
       "basename": "clear-sable-font",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/clear-sable-font.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/clear-sable-font.sable.css"
     },
     {
       "basename": "clear-theme-font",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/clear-theme-font.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/clear-theme-font.sable.css"
     },
     {
       "basename": "comic-relief",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/comic-relief.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/comic-relief.sable.css"
     },
     {
       "basename": "crt-filter",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/crt-filter.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/crt-filter.sable.css"
     },
     {
       "basename": "dynamic-membersbar",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/dynamic-membersbar.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/dynamic-membersbar.sable.css"
     },
     {
       "basename": "dynamic-roomsbar",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/dynamic-roomsbar.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/dynamic-roomsbar.sable.css"
     },
     {
       "basename": "grayscale-avatars",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/grayscale-avatars.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/grayscale-avatars.sable.css"
     },
     {
       "basename": "OpenDyslexic",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/OpenDyslexic.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/OpenDyslexic.sable.css"
     },
     {
       "basename": "rightbar",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/rightbar.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rightbar.sable.css"
     },
     {
       "basename": "rounded",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/rounded.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rounded.sable.css"
     },
     {
       "basename": "rounded-sable",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/rounded-sable.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rounded-sable.sable.css"
     },
     {
       "basename": "solid-colors",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/solid-colors.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/solid-colors.sable.css"
     },
     {
       "basename": "square-avatars",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/square-avatars.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/square-avatars.sable.css"
     },
     {
       "basename": "square-everything",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/square-everything.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/square-everything.sable.css"
     },
     {
       "basename": "unhide-spoilers",
-      "fullUrl": "https://raw.githubusercontent.com/SableClient/themes/main/tweaks/unhide-spoilers.sable.css"
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/unhide-spoilers.sable.css"
     }
   ]
 }

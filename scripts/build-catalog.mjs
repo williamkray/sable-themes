@@ -18,7 +18,7 @@ const repo =
 const ref = process.env.GITHUB_REF_NAME?.trim() || process.env.CATALOG_REF?.trim() || 'main';
 
 function rawFileUrl(relativePath) {
-  return `https://raw.githubusercontent.com/${repo}/${ref}/${relativePath}`;
+  return `https://git.sable.moe/${repo}/raw/branch/${ref}/${relativePath}`;
 }
 
 function buildCatalog() {
