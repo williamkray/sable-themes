@@ -23,7 +23,7 @@ body [class="app-shell svelte-a5rf23"] * {
 }
 
 /* Max hover Size */
-body.sable-remote-theme :is([class="sidebar svelte-1ih7ea7"], [class="desktop-tools svelte-k3ro5n"]):hover {
+body.sable-remote-theme :is([class="sidebar svelte-1ih7ea7"], [class="desktop-tools svelte-k3ro5n"]):hover, [class="sidebar svelte-1ih7ea7"]:has([aria-haspopup="menu"][aria-expanded="true"]) {
   --room-width: 14.9375rem !important;
   overflow: hidden !important;
   [class="room-nav svelte-2laync"] {--room-width: 14.9375rem !important;}
