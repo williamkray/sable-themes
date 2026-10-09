@@ -19,7 +19,7 @@ body.sable-remote-theme {
 /* Minimum ini Size */
 body [class="app-shell svelte-a5rf23"] * {
     --room-nav-width: var(--room-width) !important;
-    transition: width 0.18s ease-in-out;
+    transition: width 0.15s ease-in-out;
 }
 
 /* Max hover Size */
