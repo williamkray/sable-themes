@@ -7,20 +7,34 @@ author: userspring
 tags: sidebar
 */
 
-/* Minimum ini Size */
-body.sable-remote-theme [class*="MembersDrawer_MembersDrawer__10re0tb0"] {
-  width: 4rem !important;
-  transition: width 0.18s ease-in-out;
-}
-body.sable-remote-theme [class*="MembersDrawer_MembersDrawer__10re0tb0"] 
-[class*="_1rrvnjm8 _1mqalmd1 _1mqalmd0 _1rrvnjma _1rrvnjmi cpipac3"] {
-  height: 2.1rem !important;
+/* Minimum size (collapsed) */
+body.sable-remote-theme [class="members-drawer svelte-mbc02d"] {
+  position: relative !important;
+  min-width: 4rem !important;
+  max-width: 4rem !important;
+  margin-left: 0 !important;
+  transition: max-width 0.28s ease-out, margin-left 0.28s ease-out;
+  contain: layout paint style !important;
 }
 
-/* Max hover Size */
-body.sable-remote-theme [class*="MembersDrawer_MembersDrawer__10re0tb0"]:hover,
-body.sable-remote-theme [class*="MembersDrawer_MembersDrawer__10re0tb0"]:has(
-  [class*="_1rrvnjm8 _1mqalmd1 _1mqalmd0 _1rrvnjma _1rrvnjmi cpipac3"]:focus-within
-) {
-  width: 14.9375rem !important;
+body.sable-remote-theme [class="members-drawer svelte-mbc02d"] [class="controls svelte-mbc02d"] {
+  display: none;
+  opacity: 0.5;
+  transition: opacity 0.2s, display 0.2s allow-discrete;
+}
+
+
+/* Max size (expanded) */
+body.sable-remote-theme [class="members-drawer svelte-mbc02d"]:hover,
+body.sable-remote-theme [class="members-drawer svelte-mbc02d"]:has([class*="member-search-input"]:focus-within, [aria-expanded="true"]) {
+  max-width: 14.9375rem !important;
+  margin-left: -10.9375rem !important; /* 14.9375rem - 4rem */
+  transition: max-width 0.18s ease-in, margin-left 0.18s ease-in;
+  z-index: 2 !important;
+}
+
+body.sable-remote-theme [class="members-drawer svelte-mbc02d"]:hover [class="controls svelte-mbc02d"],
+body.sable-remote-theme [class="members-drawer svelte-mbc02d"]:has([class*="member-search-input"]:focus-within, [aria-expanded="true"]) [class="controls svelte-mbc02d"] {
+  display: block;
+  opacity: 1;
 }

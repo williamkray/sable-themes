@@ -153,7 +153,7 @@ body.sable-remote-theme [class="unread svelte-161aneu"] *, .unread.svelte-161ane
   border-color: hsl(0, 70%, 40%) !important;
 }
 
-body.sable-remote-theme [class="pin-badge svelte-qbrvv8"], [class*="unread-badge-count"] {
+body.sable-remote-theme [class*="pin-badge svelte-qbrvv8"], [class*="unread-badge-count"] {
   background-color: hsl(0, 80%, 54%) !important; /*Ping Notif */
   color: hsl(225, 10%, 93%) !important;
 }
