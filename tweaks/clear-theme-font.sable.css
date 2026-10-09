@@ -1,19 +1,19 @@
 /*
 @sable-tweak
-id: clear-theme-font
-name: Clear Theme Font
-description: Remove custom theme font where applicable
+id: clear-sable-font
+name: Clear Sable Font
+description: Use default system/browser font
 author: userspring
 tags: global, font
 */
 
 body.sable-remote-theme,
 body.sable-remote-theme * {
-  /* DO NOT USE font-family HERE. WE HAVE VARIABLES. */
-  --font-secondary: 'Nunito Variable', 'Twemoji', system-ui, -apple-system, sans-serif, serif !important;
-  --custom-font-size1: 1rem !important;
-  --custom-font-size2: .875rem !important;
-  --custom-line-height: inherit !important;
-  --custom-letter-spacing: inherit !important;
-  --custom-line-weight: 400 !important;
+  font-family: 'Nunito Variable', 'Twemoji', system-ui, -apple-system, sans-serif, serif !important;
+  --line-height-body: 1.5 !important;
+  --letter-spacing: inherit !important;
+  --font-weight-400: 400 !important;
+}
+:root {
+  --text-scale: 1 !important;
 }

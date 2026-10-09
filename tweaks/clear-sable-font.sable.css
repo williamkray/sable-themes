@@ -9,12 +9,11 @@ tags: global, font
 
 body.sable-remote-theme,
 body.sable-remote-theme * {
-  /* DO NOT USE font-family HERE. WE HAVE VARIABLES. */
-  --font-secondary: system-ui, Twemoji, -apple-system, sans-serif, serif !important;
-  --font-monospace: monospace;
-  --custom-font-size1: 1rem !important;
-  --custom-font-size2: .875rem !important;
-  --custom-line-height: inherit !important;
-  --custom-letter-spacing: inherit !important;
-  --custom-line-weight: 400 !important;
+  font-family: system-ui, Twemoji, -apple-system, sans-serif, serif !important;
+  --line-height-body: 1.5 !important;
+  --letter-spacing: inherit !important;
+  --font-weight-400: 400 !important;
+}
+:root {
+  --text-scale: 1 !important;
 }

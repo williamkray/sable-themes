@@ -73,8 +73,13 @@ body.sable-remote-theme [class*="AutocompleteMenu"] img,
 body.sable-remote-theme [class*="Reaction_ReactionImg"] {
   border-radius: 3.2px !important;
 }
-body.sable-remote-theme [class*="UserQuickTools"] * {
+
+/* Next Fixed */
+body.sable-remote-theme [class="desktop-tools svelte-k3ro5n"] * {
   border-radius: 50% !important;
+}
+body.sable-remote-theme [class="avatar-image media-image svelte-c4qk4x"] *, [class="avatar-fallback"] {
+  border-radius: 11.2px !important;
 }
 
 /* Dynamic Rounding */
