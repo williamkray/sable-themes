@@ -249,10 +249,6 @@
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rounded.sable.css"
     },
     {
-      "basename": "rounded-sable",
-      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rounded-sable.sable.css"
-    },
-    {
       "basename": "solid-colors",
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/solid-colors.sable.css"
     },
