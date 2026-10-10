@@ -22,10 +22,11 @@ body.sable-remote-theme * {
   --custom-text-shadow3: meow !important;
 }
 
-/* Fix for gradient themes trasparency - Settings Left Panel*/
-body.sable-remote-theme [data-sentry-component="PageNav"][data-sentry-element="Box"] {
-  background: linear-gradient(to top, var(--sable-bg-container), var(--sable-bg-container)), var(--sides-grad) !important;
+/* Fix for gradient themes trasparency*/
+body.sable-remote-theme {
+--sable-bg-container: var(--sides-grad) !important;
 }
+
 
 
 /* Tip - Check 'Neon City' theme implementation*/

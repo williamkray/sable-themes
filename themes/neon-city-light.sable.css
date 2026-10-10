@@ -6,25 +6,23 @@ author: original by userspring, modified by swirly
 kind: light
 contrast: high
 tags: gradient, purple, glow, translucent
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/neon-city-light.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-light.sable.css
 */
 
 /* Comment: Keep alpha vars & --sides-grad for the "Solid Colors" tweak to work */
 
-  /* Center Box Gradient */
-body.sable-remote-theme :is([class*="RoomTimeline"], header[class*="ContainerColor_ContainerColor_variant_Surface"], [style*="padding: 0 var(--_164xfge1u);"]) {
-  --center-grad: linear-gradient(to top, hsl(300, 100%, 94.5%) 20%, hsl(300, 100%, 98%) 40%) fixed;
-  background: var(--center-grad);
-}
-
 body.sable-remote-theme {
 
   /* Side Panels Gradient */
+  [class="desktop-navigation-main svelte-1ih7ea7"], [class="members-drawer svelte-mbc02d"] {
   --sides-grad: linear-gradient(to top, hsl(300, 100%, 92.5%) 20%, hsl(300, 100%, 98%) 40%) fixed;
   background: var(--sides-grad);
-
+}
+[class="panel-header svelte-8tt8p8"] {
+background: var(--sable-bg-container);
+}
   /* Translucence - Don't add new vars */
-  --softest-alpha: 0;
+  --softest-alpha: 0.05;
   --softer-alpha: 0.4;
   --soft-alpha: 0.67;
   --hard-alpha: 0.85;
@@ -32,14 +30,14 @@ body.sable-remote-theme {
   --hardest-alpha: 1;
 
   /* Background */
-  --sable-bg-container: hsla(300, 50%, 94%, 0.05); /*!*/
+  --sable-bg-container: hsla(300, 90%, 94%, var(--softest-alpha)); /*!*/
   --sable-bg-container-hover: hsla(270, 25%, 77.56%, var(--hard-alpha));
   --sable-bg-container-active: hsla(270, 25%, 75.52%, var(--hard-alpha));
   --sable-bg-container-line: hsla(270, 45%, 73.48%, var(--hard-alpha));
   --sable-bg-on-container: hsla(270, 20.5%, 10%, var(--hard-alpha));
 
   /* Surface */
-  --sable-surface-container: hsla(300, 30%, 95%, var(--soft-alpha)); /*!*/
+  --sable-surface-container: linear-gradient(to top, hsla(300, 100%, 94.5%, var(--hard-alpha)) 20%, hsla(300, 100%, 98%, var(--hard-alpha)) 40%) fixed; /*!*/
   --sable-surface-container-hover: hsla(300, 25%, 89%, var(--hard-alpha));
   --sable-surface-container-active: hsla(270, 25%, 71.44%, var(--hard-alpha));
   --sable-surface-container-line: hsla(270, 35%, 69.06%, var(--hard-alpha));
@@ -119,9 +117,9 @@ body.sable-remote-theme {
 }
 
 /* Left Panel Buttons Shadow */
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"]:hover {
+body.sable-remote-theme [class*="nav-tab-outlined"]:hover, [class*="space-item"] *:hover {
   box-shadow: 0 0 9px 1px hsla(270, 100%, 25%, 0.65);
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.12s ease;
 }
 
   /* Text Box Shadow */
@@ -129,14 +127,3 @@ body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"]:hover {
   box-shadow: 0 10px 15px -10px hsla(270, 50%, 50%, 0.6);
   outline: none;
 }
-
-body.sable-remote-theme .ThreadDrawer_ThreadDrawerOverlay__1n9cyvz7 {
-    background-color: hsla(300, 50%, 95%, 1) !important;
-}
-/* Tip - Rooms & Settings Left Panel Gradient Zone, useful for zero Translucence:
-
-body.sable-remote-theme [data-sentry-component="PageNav"][data-sentry-element="Box"] {
-background: linear-gradient(to top, hsla(200, 100%, 92%, 0.85) 20%, hsla(300, 100%, 98%, 0.85) 40%) fixed;
-}
-or set --sable-bg-container alpha to 0.7 and --side-grad saturation to 100% for low translucence
-*/
