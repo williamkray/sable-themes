@@ -74,7 +74,7 @@ author: Your Name
 kind: light
 contrast: low
 tags: comma, separated, keywords
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/my-theme.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/my-theme.sable.css
 */
 ```
 
@@ -83,5 +83,7 @@ fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/m
 - **`fullThemeUrl`**: Raw URL to the full file under `themes/` (used when linking from preview to install).
 
 Adjust `fullThemeUrl` to match this repo layout: `…/main/themes/{basename}.sable.css` once the files are on `main`.
+
+- **Font url example:** `src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/fonts/Font_Folder/font-name.ttf")`
 
 CI will regenerate the catalog.json. Do not modify it.
