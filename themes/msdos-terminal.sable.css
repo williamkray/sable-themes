@@ -13,7 +13,7 @@ fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/ms
   font-family: 'Terminus';
   font-weight: 'normal';
   font-style: normal;
-  src: url('https://raw.githubusercontent.com/SableClient/themes/main/fonts/Terminus/Terminus.ttf') format('truetype');
+  src: url('https://git.sable.moe/SableClient/themes/raw/branch/main/themes/fonts/Terminus/Terminus.ttf') format('truetype');
   font-display: swap;
 }
 

@@ -11,12 +11,12 @@ fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os
 @font-face {
   font-family: IBM8x16;
   font-weight: normal;
-  src: url("https://raw.githubusercontent.com/GreenB0t/Gachiakuta/master/Px437_IBM_VGA_8x16.ttf") format('truetype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/fonts/IBM_VGA/Px437_IBM_VGA_8x16.ttf") format('truetype');
 }
 @font-face {
   font-family: W95FA;
   font-weight: normal;
-  src: url("https://raw.githubusercontent.com/GreenB0t/Gachiakuta/master/W95F.otf") format('opentype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/fonts/W95FA/W95F.otf") format('opentype');
 }
 
 /* Font Stuff */

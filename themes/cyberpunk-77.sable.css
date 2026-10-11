@@ -12,7 +12,7 @@ fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cy
 @font-face {
   font-family: Oxanium;
   font-weight: 200 500;
-  src: url("https://raw.githubusercontent.com/SableClient/themes/main/fonts/Oxanium/Oxanium-Variable.ttf") format('truetype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/themes/fonts/Oxanium/Oxanium-Variable.ttf") format('truetype');
   font-display: swap; 
 }
 
