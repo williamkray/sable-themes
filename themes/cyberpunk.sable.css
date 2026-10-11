@@ -6,13 +6,13 @@ author: userspring
 kind: dark
 contrast: low
 tags: blue, purple, gradient · recommended tweaks: square-everything, crt
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/cyberpunk.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/cyberpunk.sable.css
 */
 
 @font-face {
   font-family: Oxanium;
   font-weight: 200 500;
-  src: url("https://raw.githubusercontent.com/SableClient/themes/main/fonts/Oxanium/Oxanium-Variable.ttf") format('truetype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/themes/fonts/Oxanium/Oxanium-Variable.ttf") format('truetype');
   font-display: swap; 
 }
 

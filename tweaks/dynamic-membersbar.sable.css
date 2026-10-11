@@ -8,7 +8,7 @@ tags: sidebar
 */
 
 /* Minimum size (collapsed) */
-body.sable-remote-theme [class="members-drawer svelte-mbc02d"] {
+body [class="members-drawer svelte-mbc02d"] {
   position: relative !important;
   min-width: 4rem !important;
   max-width: 4rem !important;

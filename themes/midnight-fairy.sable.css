@@ -6,22 +6,21 @@ author: userspring
 kind: dark
 contrast: low
 tags: gradient, purple, violet blue, two-tone
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/midnight-fairy.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/midnight-fairy.sable.css
 */
-
-/* Comment: Keep --sides-grad for the "Solid Colors" tweak to work */
-
-  /* Center Box Gradient */
-body.sable-remote-theme :is([class*="RoomTimeline"], header[class*="ContainerColor_ContainerColor_variant_Surface"], [style*="padding: 0 var(--_164xfge1u);"]) {
-  --center-grad: radial-gradient(ellipse at right, hsl(250, 40%, 28%) 20%, hsl(210, 40%, 20%)) fixed;
-  background: var(--center-grad);
-}
 
 body.sable-remote-theme {
 
   /* Side Panels Gradient */
-  --sides-grad: radial-gradient(ellipse at right, hsl(300, 100%, 30%), hsl(0, 0%, 0%)) fixed;
-  background: var(--sides-grad);
+  [class*="navigation-main svelte-1ih7ea7"] {
+  background: radial-gradient(ellipse at right, hsl(300, 100%, 30%), hsl(0, 0%, 0%)) fixed;;
+}
+[class="members-drawer svelte-mbc02d"] {
+  background: radial-gradient(ellipse at right, hsl(292, 40%, 23.3%), hsl(270, 25%, 16%)) fixed;
+}
+[class="panel-header svelte-8tt8p8"], [class="controls svelte-mbc02d"] {
+  background: none;
+}
 
   /* Background */
   --sable-bg-container: hsla(270, 25%, 20.4%, 0.7); /*!*/
@@ -31,7 +30,7 @@ body.sable-remote-theme {
   --sable-bg-on-container: hsl(345, 30%, 88%);
 
   /* Surface */
-  --sable-surface-container: hsl(230, 35%, 35%);
+  --sable-surface-container: radial-gradient(ellipse at right, hsl(250, 40%, 28%) 20%, hsl(210, 40%, 20%)) fixed;
   --sable-surface-container-hover: hsl(250, 25%, 30.18%);
   --sable-surface-container-active: hsl(270, 25%, 28.56%);
   --sable-surface-container-line: hsl(270, 25%, 30.94%);
@@ -111,17 +110,6 @@ body.sable-remote-theme {
 }
 
 /* Left Panel Buttons */
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"]:hover {
+body.sable-remote-theme [class*="nav-tab-outlined"]:hover {
   background-color: hsl(270, 25%, 30.6%);
 }
-
-body.sable-remote-theme .ThreadDrawer_ThreadDrawerOverlay__1n9cyvz7 {
-    background-color: hsla(260, 30%, 22%, 1) !important;
-}
-/* Tip - Rooms & Settings Left Panel Gradient Zone, useful for zero Translucence:
-
-body.sable-remote-theme [data-sentry-component="PageNav"][data-sentry-element="Box"] {
-background: linear-gradient(to top, hsla(200, 100%, 8%, 0.85) 20%, hsla(300, 100%, 2%, 0.85) 40%) fixed;
-}
-or like we did, set --sable-bg-container alpha to 0.7 and --side-grad saturation to 100% for low translucence
-*/

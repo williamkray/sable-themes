@@ -30,10 +30,10 @@ body.sable-remote-theme {
   --sable-bg-on-container: hsl(225, 10%, 93%);
 
   /* Surface */
-  --sable-surface-container: hsl(235, 12%, 12.3%);
-  --sable-surface-container-hover: hsl(235, 10%, 18%);
-  --sable-surface-container-active: hsl(235, 10%, 23%);
-  --sable-surface-container-line: hsl(235, 10%, 17%);
+  --sable-surface-container: hsl(225, 12%, 12.3%);
+  --sable-surface-container-hover: hsl(225, 10%, 18%);
+  --sable-surface-container-active: hsl(225, 10%, 23%);
+  --sable-surface-container-line: hsl(225, 10%, 17%);
   --sable-surface-on-container: hsl(225, 10%, 93%);
 
   /* Surface Variant */
@@ -56,15 +56,15 @@ body.sable-remote-theme {
   --sable-primary-on-container: hsl(225, 10%, 93%);
 
   /* Secondary */
-  --sable-sec-main: hsl(235, 14%, 62%);
-  --sable-sec-main-hover: hsl(235, 14%, 69%);
-  --sable-sec-main-active: hsl(235, 14%, 75%);
-  --sable-sec-main-line: hsl(235, 15%, 81%);
+  --sable-sec-main: hsl(225, 14%, 62%);
+  --sable-sec-main-hover: hsl(225, 14%, 69%);
+  --sable-sec-main-active: hsl(225, 14%, 75%);
+  --sable-sec-main-line: hsl(225, 15%, 81%);
   --sable-sec-on-main: hsl(225, 12%, 12%);
-  --sable-sec-container: hsl(235, 10%, 19%);
-  --sable-sec-container-hover: hsl(235, 10%, 23%);
-  --sable-sec-container-active: hsl(235, 9%, 27%);
-  --sable-sec-container-line: hsl(235, 10%, 20%);
+  --sable-sec-container: hsl(225, 10%, 19%);
+  --sable-sec-container-hover: hsl(225, 10%, 23%);
+  --sable-sec-container-active: hsl(225, 9%, 27%);
+  --sable-sec-container-line: hsl(225, 10%, 20%);
   --sable-sec-on-container: hsl(225, 21%, 93%);
 
   /* Success */
@@ -194,7 +194,7 @@ body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [href]:not([data-
 
 /*** Embed Colors ***/
 .choice.choice[data-selected=true] {
-    background: hsl(235, 10%, 26%) !important;
+    background: hsl(225, 10%, 26%) !important;
 }
 body.sable-remote-theme [class="youtube-header svelte-r7kdal"]
  {

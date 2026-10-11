@@ -14,7 +14,7 @@ fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/ne
 body.sable-remote-theme {
 
   /* Side Panels Gradient */
-[class="desktop-navigation-main svelte-1ih7ea7"], [class="members-drawer svelte-mbc02d"] {
+[class*="navigation-main svelte-1ih7ea7"], [class="members-drawer svelte-mbc02d"] {
 --sides-grad: linear-gradient(to top, hsl(300, 100%, 7.5%) 20%, hsl(300, 100%, 2%) 40%) fixed;
 background: var(--sides-grad);
 }

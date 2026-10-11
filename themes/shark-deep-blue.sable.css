@@ -6,19 +6,19 @@ author: userspring
 kind: dark
 contrast: low
 tags: ocean, red bleed
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/shark-deep-blue.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/shark-deep-blue.sable.css
 */
 
 @font-face {
   font-family: Chakra Petch;
   font-weight: 400;
-  src: url("https://raw.githubusercontent.com/SableClient/themes/main/fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format('truetype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/themes/fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format('truetype');
   font-display: swap; 
 }
 @font-face {
   font-family: Chakra Petch;
   font-weight: 300;
-  src: url("https://raw.githubusercontent.com/SableClient/themes/main/fonts/Chakra_Petch/ChakraPetch-Light.ttf") format('truetype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/themes/fonts/Chakra_Petch/ChakraPetch-Light.ttf") format('truetype');
   font-display: swap; 
 }
 

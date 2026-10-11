@@ -6,14 +6,14 @@ author: userspring
 kind: dark
 contrast: high
 tags: retro, oled, black · recommended tweaks: square-everything, crt
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/msdos-terminal.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/msdos-terminal.sable.css
 */
 
 @font-face {
   font-family: 'Terminus';
   font-weight: 'normal';
   font-style: normal;
-  src: url('https://raw.githubusercontent.com/SableClient/themes/main/fonts/Terminus/Terminus.ttf') format('truetype');
+  src: url('https://git.sable.moe/SableClient/themes/raw/branch/main/themes/fonts/Terminus/Terminus.ttf') format('truetype');
   font-display: swap;
 }
 

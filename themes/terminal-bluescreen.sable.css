@@ -6,13 +6,13 @@ author: otesunki, edited by userspring
 kind: dark
 contrast: low
 tags: retro, blue · recommended tweaks: square-everything, crt
-fullThemeUrl: https://raw.githubusercontent.com/SableClient/themes/main/themes/terminal-bluescreen.sable.css
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/terminal-bluescreen.sable.css
 */
 
 @font-face {
   font-family: IBM8x14;
   font-weight: normal;
-  src: url("https://raw.githubusercontent.com/GreenB0t/Gachiakuta/master/Px437_IBM_VGA_8x14.ttf") format('truetype');
+  src: url("https://git.sable.moe/SableClient/themes/raw/branch/main/fonts/IBM_VGA/Px437_IBM_VGA_8x14.ttf") format('truetype');
 }
 
 body.sable-remote-theme :is(.layout_MessageTextBody_jumboEmoji_none__1r9nvas1b, 
