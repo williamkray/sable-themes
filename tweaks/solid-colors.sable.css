@@ -23,10 +23,11 @@ body.sable-remote-theme * {
 }
 
 /* Fix for gradient themes trasparency*/
-body.sable-remote-theme {
---sable-bg-container: var(--sides-grad) !important;
+body.sable-remote-theme [class*="navigation-main svelte-1ih7ea7"], [class="members-drawer svelte-mbc02d"] {
+--sable-bg-container: var(--sides-grad, revert);
 }
-
-
+body.sable-remote-theme [class="panel-header svelte-8tt8p8"], [class="controls svelte-mbc02d"] {
+background: none !important;
+}
 
 /* Tip - Check 'Neon City' theme implementation*/
