@@ -22,18 +22,12 @@ fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/sh
   font-display: swap; 
 }
 
-body.sable-remote-theme :is(.layout_MessageTextBody_jumboEmoji_none__1r9nvas1b, 
-[class*="CustomHtml_Paragraph__1t9vo331"], 
-[class="layout_Username__1r9nvas16"] *, 
-.Editor_Editor__1a1o97c0 *:not([class*="CustomHtml_EmoticonBase__1t9vo33q"] *)) {
-    --custom-font-size1: 15.5px;
-    --custom-line-height: 1.4;
-    line-height: var(--custom-line-height);
-    font-size: var(--custom-font-size1) !important;
+:root {
+  --text-scale: 0.96875 !important;
 }
 
 body.sable-remote-theme {
-  --font-secondary: 'Chakra Petch', 'Twemoji', 'Nunito Variable', system-ui, -apple-system, sans-serif;
+  font-family: 'Chakra Petch', 'Twemoji', 'Nunito Variable', system-ui, -apple-system, sans-serif;
 
   /* --- Background --- */
   --sable-bg-container: hsl(207, 34.72%, 12.56%);
@@ -123,52 +117,7 @@ body.sable-remote-theme {
 }
 
 /* --- Left Panel Buttons --- */
-/* Animated Hover Color Transition */
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"] {
-  position: relative;
-  background-color: hsl(205, 33.14%, 16.14%);
-  overflow: hidden;
-  transition: background-color 0.3s ease;
-  isolation: isolate;
-}
-
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"]::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+body.sable-remote-theme [class*="nav-tab-outlined"]:hover, [class*="space-item"] *:hover {
   background-color: hsl(353, 63.12%, 28.27%);
-  transform: scale(0);
-  transform-origin: top left;
-  transition: transform 2.3s ease-out;
-  z-index: -1;
-}
-
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"] {
-  position: relative;
-  background-color: hsl(209, 37.34%, 12.5%); /* Base Color */
-  overflow: hidden;
-  transition: background-color 0.3s ease;
-}
-
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"]::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 200%;
-  height: 200%;
-  border-radius: 50%;
-  background-color: hsl(353, 63.12%, 28.27%);
-  transform: scale(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
-body.sable-remote-theme button[class*="Sidebar_SidebarAvatar"]:hover::before {
-  transform: scale(2);
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -188,7 +188,7 @@ body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [data-settings-li
     border: none !important;
 }
 
-body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [href]:not([data-settings-link], [class*="mention-loud"] *) {
+body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [href]:not([data-settings-link], [data-matrix-link="room"], [data-matrix-link="user"], [data-matrix-link="event"], [data-mx-room-mention]) {
     color: hsl(195, 90%, 74%) !important; /*Links*/
 }
 
@@ -200,6 +200,7 @@ body.sable-remote-theme [class="youtube-header svelte-r7kdal"]
  {
     background: hsl(0, 95%, 54%);
 }
+
 body.sable-remote-theme [class="tiktok-header svelte-1ik66a8"]
  {
     background: radial-gradient(circle at bottom right, hsl(0, 0%, 25%), hsl(0, 0%, 0%) 60%) fixed;
@@ -221,4 +222,12 @@ body.sable-remote-theme [class="instagram-header svelte-13mnb7o"]
   #f77638 70%, 
   #fec66d 100%
 );
+}
+
+body.sable-remote-theme [class="bsky-header svelte-15lxds5"]
+ {
+    background: hsl(201, 100%, 47%);
+}
+body.sable-remote-theme [class="bsky-site svelte-15lxds5"]::before {
+  content: "🩵 ";
 }
