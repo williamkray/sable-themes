@@ -154,6 +154,11 @@
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/neon-city-red.sable.css"
     },
     {
+      "basename": "okayu-purple",
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/okayu-purple.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/okayu-purple.sable.css"
+    },
+    {
       "basename": "os-mac9",
       "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os-mac9.preview.sable.css",
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/os-mac9.sable.css"
