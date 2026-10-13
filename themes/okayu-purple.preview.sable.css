@@ -1,0 +1,20 @@
+/*
+@sable-theme
+id: okayu-purple
+name: Okayu Purple
+author: mentalost
+kind: dark
+contrast: low
+tags: next, purple, dark, rounded
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/okayu-purple.sable.css
+*/
+
+.sable-theme-preview {
+  --sable-bg-container: #2E2937;
+  --sable-bg-on-container: #eee5fc;
+  --sable-surface-container: #2E2937;
+  --sable-surface-container-line: #3B334A;
+  --sable-surface-on-container: #b4abc8;
+  --sable-primary-main: #9878ec;
+  --sable-primary-on-main: #eee5fc;
+}
