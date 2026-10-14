@@ -156,3 +156,15 @@ body.sable-remote-theme .sender-identity-pronoun {
 body.sable-remote-theme .link-preview, body.sable-remote-theme .youtube-preview {
   background: #414249;
 }
+
+/* background of message being replied to */
+body.sable-remote-theme .message[data-selected="true"] {
+  background: #383b57;
+  box-shadow: none;
+  border: 1px solid #5865f2;
+  color: #fff;
+}
+
+body.sable-remote-theme .message[data-selected="true"]:hover {
+  background: #36384b;
+}
