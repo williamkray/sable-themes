@@ -1,0 +1,104 @@
+/*
+@sable-theme
+id: vesper
+name: Vesper
+author: Rauno Freiberg / 7w1
+description: Peppermint and orange flavored dark theme for Sable.
+kind: dark
+contrast: high
+tags: vesper, dark, charcoal, peach, peppermint
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/vesper.sable.css
+*/
+
+body.sable-remote-theme {
+  /* Background */
+  --sable-bg-container: #101010;
+  --sable-bg-container-hover: #161616;
+  --sable-bg-container-active: #1C1C1C;
+  --sable-bg-container-line: #282828;
+  --sable-bg-on-container: #FFFFFF;
+
+  /* Surface */
+  --sable-surface-container: #101010;
+  --sable-surface-container-hover: #161616;
+  --sable-surface-container-active: #1C1C1C;
+  --sable-surface-container-line: #343434;
+  --sable-surface-on-container: #FFFFFF;
+
+  /* Surface Variant */
+  --sable-surface-var-container: #1C1C1C;
+  --sable-surface-var-container-hover: #232323;
+  --sable-surface-var-container-active: #282828;
+  --sable-surface-var-container-line: #505050;
+  --sable-surface-var-on-container: #A0A0A0;
+
+  /* Primary */
+  --sable-primary-main: #FFC799;
+  --sable-primary-main-hover: #FFCFA8;
+  --sable-primary-main-active: #E6B38A;
+  --sable-primary-main-line: #D6A780;
+  --sable-primary-on-main: #101010;
+  --sable-primary-container: #30251E;
+  --sable-primary-container-hover: #3D2E23;
+  --sable-primary-container-active: #4A3729;
+  --sable-primary-container-line: #805F48;
+  --sable-primary-on-container: #FFC799;
+
+  /* Secondary */
+  --sable-sec-main: #A0A0A0;
+  --sable-sec-main-hover: #B5B5B5;
+  --sable-sec-main-active: #CCCCCC;
+  --sable-sec-main-line: #7E7E7E;
+  --sable-sec-on-main: #101010;
+  --sable-sec-container: #1C1C1C;
+  --sable-sec-container-hover: #232323;
+  --sable-sec-container-active: #282828;
+  --sable-sec-container-line: #343434;
+  --sable-sec-on-container: #FFFFFF;
+
+  /* Success */
+  --sable-success-main: #99FFE4;
+  --sable-success-main-hover: #B0FFEB;
+  --sable-success-main-active: #89E6CD;
+  --sable-success-main-line: #74C2AE;
+  --sable-success-on-main: #101010;
+  --sable-success-container: #1C2D28;
+  --sable-success-container-hover: #233B33;
+  --sable-success-container-active: #2B493F;
+  --sable-success-container-line: #487B6B;
+  --sable-success-on-container: #99FFE4;
+
+  /* Warning */
+  --sable-warn-main: #FFC799;
+  --sable-warn-main-hover: #FFCFA8;
+  --sable-warn-main-active: #E6B38A;
+  --sable-warn-main-line: #D6A780;
+  --sable-warn-on-main: #101010;
+  --sable-warn-container: #30251E;
+  --sable-warn-container-hover: #3D2E23;
+  --sable-warn-container-active: #4A3729;
+  --sable-warn-container-line: #805F48;
+  --sable-warn-on-container: #FFC799;
+
+  /* Critical */
+  --sable-crit-main: #FF8080;
+  --sable-crit-main-hover: #FF9999;
+  --sable-crit-main-active: #E67373;
+  --sable-crit-main-line: #CC6666;
+  --sable-crit-on-main: #101010;
+  --sable-crit-container: #301E1E;
+  --sable-crit-container-hover: #3D2525;
+  --sable-crit-container-active: #4A2D2D;
+  --sable-crit-container-line: #804848;
+  --sable-crit-on-container: #FF8080;
+
+  /* Other */
+  --sable-focus-ring: #FFC79980;
+  --sable-shadow: #00000066;
+  --sable-overlay: #101010D9;
+}
+
+/* Member rows use the base surface color on hover. */
+body.sable-remote-theme .member-identity-button:hover {
+  background: var(--sable-bg-container-hover);
+}

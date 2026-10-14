@@ -1,0 +1,21 @@
+/*
+@sable-theme
+id: vesper
+name: Vesper
+author: Rauno Freiberg / 7w1
+description: Peppermint and orange flavored dark theme for Sable.
+kind: dark
+contrast: high
+tags: vesper, dark, charcoal, peach, peppermint
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/vesper.sable.css
+*/
+
+.sable-theme-preview {
+  --sable-bg-container: #101010;
+  --sable-bg-on-container: #FFFFFF;
+  --sable-surface-container: #101010;
+  --sable-surface-container-line: #343434;
+  --sable-surface-on-container: #FFFFFF;
+  --sable-primary-main: #FFC799;
+  --sable-primary-on-main: #101010;
+}
