@@ -202,6 +202,11 @@
       "basename": "terminal-bluescreen",
       "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/terminal-bluescreen.preview.sable.css",
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/terminal-bluescreen.sable.css"
+    },
+    {
+      "basename": "vesper",
+      "previewUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/vesper.preview.sable.css",
+      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/themes/vesper.sable.css"
     }
   ],
   "tweaks": [
