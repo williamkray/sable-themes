@@ -3,17 +3,11 @@
 id: unhide-spoilers
 name: Unhide Spoilers
 description: Reveals all text hidden in spoiler tags without having to click on them.
-author: kr0nst
+author: kronst
 tags: spoiler
 */
 
-body.sable-remote-theme span[class*='SpoilerBase'] {
-  color: #fff !important;
-  background: #000 !important;
-  visibility: visible !important;
-}
-
-body.sable-remote-theme span[class*='SpoilerBase'] * {
+body.sable-remote-theme span[data-mx-spoiler] {
   color: #fff !important;
   background: #000 !important;
   visibility: visible !important;
