@@ -279,3 +279,7 @@ body.sable-remote-theme [class="nav-action selection-current selection-layer sve
 svg {
   display: none !important;
 }
+
+body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [href]:not([data-settings-link], [data-matrix-link="room"], [data-matrix-link="user"], [data-matrix-link="event"], [data-mx-room-mention]) {
+    color: hsl(250, 90%, 88%) !important; /*Links*/
+}
