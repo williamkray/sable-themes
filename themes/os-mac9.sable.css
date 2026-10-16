@@ -263,7 +263,7 @@ body.sable-remote-theme :is([class="filters svelte-mbc02d"] [aria-label="Filter 
 body.sable-remote-theme :is([class="search-view svelte-1hfq897"], [class="settings-content svelte-o18v92"]) *:is(p, span):not(button *) {
 color: hsl(250, 5%, 85%) !important;
 }
-body.sable-remote-theme :is([class*="room-topic"], [class="edited svelte-aal9sf"], time, [class="pack-visibility svelte-ngmjkd"], [class="choice svelte-ngmjkd"][aria-pressed="false"], [class="topic-text svelte-ohhzdh"]) {
+body.sable-remote-theme :is([class*="room-topic"], [class="edited svelte-aal9sf"], time, [class="pack-visibility svelte-ngmjkd"], [class="choice svelte-ngmjkd"][aria-pressed="false"], [class="topic-text svelte-ohhzdh"], [class="notice has-receipts svelte-aal9sf"]) {
 color: hsl(250, 5%, 75%) !important;
 }
 
@@ -278,4 +278,8 @@ body.sable-remote-theme [class="nav-action selection-current selection-layer sve
 body.sable-remote-theme [class="nav-action selection-current selection-layer svelte-2laync"][href*="lobby"] [class="room-icon svelte-2laync"]
 svg {
   display: none !important;
+}
+
+body.sable-remote-theme [class="formatted-body svelte-u6rajk"] [href]:not([data-settings-link], [data-matrix-link="room"], [data-matrix-link="user"], [data-matrix-link="event"], [data-mx-room-mention]) {
+    color: hsl(250, 90%, 88%) !important; /*Links*/
 }
