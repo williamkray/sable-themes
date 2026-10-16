@@ -120,7 +120,7 @@ body.sable-remote-theme [class*="nav-tab-outlined"] {
 }
 
 /* Border */
-body.sable-remote-theme :is([class="avatar-root avatar-small message-avatar"], [class="avatar-fallback"]:not([class="members-drawer svelte-mbc02d"] *), [class="member-identity-avatar svelte-1ic5dnf"], [class="rail-pack svelte-ngmjkd"]) {
+body.sable-remote-theme :is([class="avatar-root avatar-small message-avatar"], [class="member-identity-avatar svelte-1ic5dnf"], [class="rail-pack svelte-ngmjkd"]) {
   border: 1px solid hsl(0, 47%, 38%);
   background-color: hsl(0, 44%, 12%);
 }
@@ -205,7 +205,7 @@ body.sable-remote-theme .room-avatar-icon .media-image-tint, svg:not([class="res
 }
 
 /* Custom Lobby Icon */
-body.sable-remote-theme [class="room-nav svelte-2laync"][aria-label="Rooms"] [class="nav-action selection-current selection-layer svelte-2laync"]:first-of-type [class="room-icon svelte-2laync"]::before { 
+body.sable-remote-theme [class="nav-action selection-current selection-layer svelte-2laync"][href*="lobby"] [class="room-icon svelte-2laync"]::before { 
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="56" y="24" width="48" height="48" rx="8" fill="none" stroke="hsl(0, 70%, 60%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="168" y="96" width="48" height="48" rx="8" fill="none" stroke="hsl(0, 70%, 60%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="168" y="184" width="48" height="48" rx="8" fill="none" stroke="hsl(0, 70%, 60%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="120" x2="168" y2="120" fill="none" stroke="hsl(0, 70%, 60%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M80,72V192a16,16,0,0,0,16,16h72" fill="none" stroke="hsl(0, 70%, 60%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>');
   display: inline-block;
   width: 1.25rem;
@@ -213,7 +213,7 @@ body.sable-remote-theme [class="room-nav svelte-2laync"][aria-label="Rooms"] [cl
   transform: rotate(180deg) scaleX(-1);
   filter: drop-shadow(0px 0px 4px hsla(0, 65%, 60%, 50%));
 }
-body.sable-remote-theme [class="room-nav-actions svelte-2laync"] [class="nav-action selection-current selection-layer svelte-2laync"]:first-of-type [class="room-icon svelte-2laync"]
+body.sable-remote-theme [class="nav-action selection-current selection-layer svelte-2laync"][href*="lobby"] [class="room-icon svelte-2laync"]
 svg {
   display: none !important;
 }
