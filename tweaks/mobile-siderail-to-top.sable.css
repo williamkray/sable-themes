@@ -1,0 +1,48 @@
+/*
+@sable-tweak
+id: mobile-siderail-to-top
+name: Mobile Siderail to Top
+description: Move the siderail (spaces bar) to the top of the screen on mobile devices.
+author: wreck
+tags: mobile, vertical-layout
+*/
+
+/* Put the rail above the room list instead of beside it */
+.mobile-navigation .navigation-main { flex-direction: column; }
+
+.mobile-navigation .rail {
+  flex: 0 0 auto;
+  width: auto;
+  border-right: 0;
+  border-bottom: var(--border-width) solid var(--bg-container-line);
+}
+
+.mobile-navigation .rail-scroll {
+  display: flex;
+  align-items: center;
+  overflow: auto hidden;
+}
+
+.mobile-navigation .rail-stack {
+  flex: none;
+  flex-direction: row;
+  padding: var(--space-200) var(--space-300);
+}
+
+.mobile-navigation .rail-separator {
+  flex: none;
+  width: var(--border-width);
+  height: 1.5rem;
+  margin: 0;
+}
+
+/* Move the active pill from the left edge to the bottom edge */
+.mobile-navigation .rail .nav-tab-side::before {
+  border-radius: var(--radii-300) var(--radii-300) 0 0;
+  width: 1.5rem;
+  height: 5px;
+  left: calc(50% - 0.75rem);
+  bottom: calc(-1 * var(--space-200) - var(--border-width));
+  transform: none !important;
+}
+.mobile-navigation .rail .nav-tab-side:hover { transform: none !important; }
