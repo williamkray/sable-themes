@@ -251,10 +251,6 @@
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/OpenDyslexic.sable.css"
     },
     {
-      "basename": "rightbar",
-      "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rightbar.sable.css"
-    },
-    {
       "basename": "rounded",
       "fullUrl": "https://git.sable.moe/SableClient/themes/raw/branch/main/tweaks/rounded.sable.css"
     },
