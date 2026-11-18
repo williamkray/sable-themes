@@ -15,8 +15,10 @@ tags: mobile, bubbles, timeline, layout
   }
 
   /* Avatar moves up into the header line instead of taking a column beside
-     the bubble. Aligned own bubbles have no avatar or name, just the time. */
-  .message.layout-bubble > .sender-avatar-button,
+     the bubble. Works with both older Sable (.avatar-button, own bubbles keep
+     their avatar) and newer Sable (.sender-avatar-button, aligned own bubbles
+     drop the avatar and name and just show the time). */
+  .message.layout-bubble > :is(.avatar-button, .sender-avatar-button),
   .message.layout-bubble > .avatar-root.message-avatar {
     position: absolute;
     inset-block-start: var(--timeline-row-padding);
@@ -24,14 +26,25 @@ tags: mobile, bubbles, timeline, layout
     translate: none !important;
   }
 
+  .message.layout-bubble.own.align-own > :is(.avatar-button, .sender-avatar-button),
+  .message.layout-bubble.own.align-own > .avatar-root.message-avatar {
+    inset-inline: auto var(--page-gutter);
+  }
+
   .message.layout-bubble header {
     align-items: flex-end !important;
     margin-block-end: var(--space-200);
   }
 
-  .message.layout-bubble:not(.own.align-own) header {
+  /* Only make room in the header when there's an avatar to put there. */
+  .message.layout-bubble:has(> :is(.avatar-button, .sender-avatar-button, .avatar-root.message-avatar)) header {
     min-height: var(--avatar-size-small);
     padding-inline-start: calc(var(--avatar-size-small) + var(--space-200));
+  }
+
+  .message.layout-bubble.own.align-own:has(> :is(.avatar-button, .sender-avatar-button, .avatar-root.message-avatar))
+    header {
+    padding-inline: 0 calc(var(--avatar-size-small) + var(--space-200));
   }
 
   /* Bubbles hug their own edge, with a consistent gap on the opposite side.
@@ -92,7 +105,12 @@ tags: mobile, bubbles, timeline, layout
     width: fit-content;
   }
 
-  .message.layout-bubble.own .message-main .content-bubble:has(.image, .media-frame-video, .gallery, .sticker)
+  /* Newer Sable tints own bubbles, so own captions follow suit there; older
+     Sable (no .sender-avatar-button anywhere) keeps them grey like its bubbles. */
+  :root:has(.message > .sender-avatar-button)
+    .message.layout-bubble.own
+    .message-main
+    .content-bubble:has(.image, .media-frame-video, .gallery, .sticker)
     :is(p.body, .formatted-body) {
     background: var(--primary-container);
     color: var(--primary-on-container);
@@ -110,7 +128,9 @@ tags: mobile, bubbles, timeline, layout
   }
 
   /* Things that lived in the avatar column (per-message times, the sending
-     spinner) move into the gap instead. */
+     spinner) move into the gap instead. On older Sable, trailing receipts sit
+     beside the bubble, so own ones move into the gap too; newer Sable already
+     puts them under the bubble. */
   .message.layout-bubble > .collapsed-pending {
     inset-inline: auto var(--page-gutter) !important;
     width: auto !important;
@@ -118,5 +138,10 @@ tags: mobile, bubbles, timeline, layout
 
   .message.layout-bubble.own.align-own > .collapsed-pending {
     inset-inline: var(--page-gutter) auto !important;
+  }
+
+  .message.layout-bubble.own.align-own .message-content > .receipt-slot {
+    inset-inline: 0 auto !important;
+    margin-inline-end: 0 !important;
   }
 }
