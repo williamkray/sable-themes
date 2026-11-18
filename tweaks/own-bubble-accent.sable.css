@@ -1,0 +1,36 @@
+/*
+@sable-tweak
+id: own-bubble-accent
+name: Own Bubble Accent
+description: In the bubble timeline layout, color your own message bubbles with the theme's primary accent.
+author: wreck
+tags: bubbles, timeline, accent, color
+*/
+
+.message.layout-bubble.own .content-bubble,
+.message.layout-bubble.own .content-bubble p.body,
+.message.layout-bubble.own .formatted-body {
+  background: var(--primary-main) !important;
+  border-color: var(--primary-main-line) !important;
+  color: var(--primary-on-main) !important;
+  /* Links would otherwise be primary-on-primary */
+  --tc-link: var(--primary-on-main);
+}
+
+.message.layout-bubble.own .content-bubble .formatted-body {
+  border-color: transparent !important;
+}
+
+.message.layout-bubble.own .formatted-body a {
+  text-decoration: underline;
+}
+
+/* Muted text inside the bubble follows the bubble's text color */
+.message.layout-bubble.own .formatted-body sub[data-md='-#'] {
+  color: var(--primary-on-main) !important;
+  opacity: 0.75;
+}
+
+.message.layout-bubble.own .formatted-body blockquote {
+  border-left-color: color-mix(in srgb, var(--primary-on-main) 50%, transparent) !important;
+}

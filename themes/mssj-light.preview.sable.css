@@ -1,0 +1,20 @@
+/*
+@sable-theme
+id: mssj-light
+name: mssj Light
+author: wreck
+kind: light
+contrast: low
+tags: purple, mauve, light, mssj, mobile
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/mssj-light.sable.css
+*/
+
+.sable-theme-preview {
+  --sable-bg-container: #faf6f9;
+  --sable-bg-on-container: #2e1f2c;
+  --sable-surface-container: #ffffff;
+  --sable-surface-container-line: #e6dbe4;
+  --sable-surface-on-container: #2e1f2c;
+  --sable-primary-main: #935d8c;
+  --sable-primary-on-main: #ffffff;
+}

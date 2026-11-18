@@ -1,0 +1,20 @@
+/*
+@sable-theme
+id: twilight-green
+name: Twilight Green
+author: wreck
+kind: dark
+contrast: low
+tags: dark, retro, green, tomorrow-night
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/twilight-green.sable.css
+*/
+
+.sable-theme-preview {
+  --sable-bg-container: #1d1f21;
+  --sable-bg-on-container: #c5c8c6;
+  --sable-surface-container: #232527;
+  --sable-surface-container-line: #3b3e40;
+  --sable-surface-on-container: #c5c8c6;
+  --sable-primary-main: #8c9440;
+  --sable-primary-on-main: #1d1f21;
+}

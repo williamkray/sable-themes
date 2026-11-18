@@ -1,0 +1,103 @@
+/*
+@sable-theme
+id: twilight-green
+name: Twilight Green
+author: wreck
+kind: dark
+contrast: low
+tags: dark, retro, green, tomorrow-night
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/twilight-green.sable.css
+*/
+
+/* GruvDark's structure with a Tomorrow Night-style Xresources palette,
+   green (color2) as the accent. */
+body.sable-remote-theme {
+  /* Background */
+  --sable-bg-container: #1d1f21;
+  --sable-bg-container-hover: #26282a;
+  --sable-bg-container-active: #2e3032;
+  --sable-bg-container-line: #3b3e40;
+  --sable-bg-on-container: #c5c8c6;
+  /* Surface */
+  --sable-surface-container: #232527;
+  --sable-surface-container-hover: #202224;
+  --sable-surface-container-active: #2e3032;
+  --sable-surface-container-line: #3b3e40;
+  --sable-surface-on-container: #c5c8c6;
+  /* Surface Variant */
+  --sable-surface-var-container: #1d1f21;
+  --sable-surface-var-container-hover: #17191a;
+  --sable-surface-var-container-active: #26282a;
+  --sable-surface-var-container-line: #4a4d50;
+  --sable-surface-var-on-container: #c5c8c6;
+  /* Primary */
+  --sable-primary-main: #8c9440;
+  --sable-primary-main-hover: #9ba34d;
+  --sable-primary-main-active: #7d8538;
+  --sable-primary-main-line: #6f7631;
+  --sable-primary-on-main: #1d1f21;
+  --sable-primary-container: #4b5022;
+  --sable-primary-container-hover: #565c28;
+  --sable-primary-container-active: #61672d;
+  --sable-primary-container-line: #8c9440;
+  --sable-primary-on-container: #d4d9a0;
+  /* Secondary */
+  --sable-sec-main: #c5c8c6;
+  --sable-sec-main-hover: #b4b7b5;
+  --sable-sec-main-active: #a3a6a4;
+  --sable-sec-main-line: #929593;
+  --sable-sec-on-main: #1d1f21;
+  --sable-sec-container: #1d1f21;
+  --sable-sec-container-hover: #26282a;
+  --sable-sec-container-active: #2e3032;
+  --sable-sec-container-line: #4a4d50;
+  --sable-sec-on-container: #c5c8c6;
+  /* Success */
+  --sable-success-main: #b5bd68;
+  --sable-success-main-hover: #c0c779;
+  --sable-success-main-active: #a7af5a;
+  --sable-success-main-line: #99a14d;
+  --sable-success-on-main: #1d1f21;
+  --sable-success-container: #3b3f23;
+  --sable-success-container-hover: #454a28;
+  --sable-success-container-active: #50552e;
+  --sable-success-container-line: #8c9440;
+  --sable-success-on-container: #d4d9a0;
+  /* Warning */
+  --sable-warn-main: #de935f;
+  --sable-warn-main-hover: #e4a272;
+  --sable-warn-main-active: #d48450;
+  --sable-warn-main-line: #c27544;
+  --sable-warn-on-main: #1d1f21;
+  --sable-warn-container: #4f3725;
+  --sable-warn-container-hover: #5a3f2a;
+  --sable-warn-container-active: #65472f;
+  --sable-warn-container-line: #de935f;
+  --sable-warn-on-container: #f0c674;
+  /* Critical */
+  --sable-crit-main: #cc6666;
+  --sable-crit-main-hover: #d47979;
+  --sable-crit-main-active: #c25757;
+  --sable-crit-main-line: #a54242;
+  --sable-crit-on-main: #1d1f21;
+  --sable-crit-container: #4a2626;
+  --sable-crit-container-hover: #552b2b;
+  --sable-crit-container-active: #613030;
+  --sable-crit-container-line: #a54242;
+  --sable-crit-on-container: #e6c9c9;
+  /* Other */
+  --sable-focus-ring: rgba(140, 148, 64, 0.5);
+  --sable-shadow: rgba(0, 0, 0, 0.6);
+  --sable-overlay: rgba(12, 13, 14, 0.9);
+
+  --tc-link: #81a2be;
+
+  --mx-uc-1: #b294bb;
+  --mx-uc-2: #cc6666;
+  --mx-uc-3: #5f819d;
+  --mx-uc-4: #8abeb7;
+  --mx-uc-5: #5e8d87;
+  --mx-uc-6: #85678f;
+  --mx-uc-7: #f0c674;
+  --mx-uc-8: #a54242;
+}

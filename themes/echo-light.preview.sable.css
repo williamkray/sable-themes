@@ -1,0 +1,20 @@
+/*
+@sable-theme
+id: echo-light
+name: echo Light
+author: wreck
+kind: light
+contrast: low
+tags: echo, green, inter, light
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/echo-light.sable.css
+*/
+
+.sable-theme-preview {
+  --sable-bg-container: #fff;
+  --sable-bg-on-container: #18181b;
+  --sable-surface-container: #f4f4f5;
+  --sable-surface-container-line: #d4d4d8;
+  --sable-surface-on-container: #18181b;
+  --sable-primary-main: #00a344;
+  --sable-primary-on-main: #fff;
+}

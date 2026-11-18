@@ -1,0 +1,122 @@
+/*
+@sable-tweak
+id: rlrk-mobile-interface
+name: RLRK Mobile Interface Customization
+description: Google Messages-style bubbles on mobile: avatar beside the name above each bubble, bubbles hug their own side with a gap on the other, and mirrored timestamps.
+author: wreck
+tags: mobile, bubbles, timeline, layout
+*/
+
+/* Mobile only, bubble layout only. Pairs well with Own Bubble Accent and
+   "align my messages to the right". */
+@media (max-width: 767.98px) {
+  .message.layout-bubble {
+    --rlrk-bubble-gap: clamp(2.5rem, 15vw, 6rem);
+  }
+
+  /* Avatar moves up into the header line instead of taking a column beside
+     the bubble. Aligned own bubbles have no avatar or name, just the time. */
+  .message.layout-bubble > .sender-avatar-button,
+  .message.layout-bubble > .avatar-root.message-avatar {
+    position: absolute;
+    inset-block-start: var(--timeline-row-padding);
+    inset-inline: var(--page-gutter) auto;
+    translate: none !important;
+  }
+
+  .message.layout-bubble header {
+    align-items: flex-end !important;
+    margin-block-end: var(--space-200);
+  }
+
+  .message.layout-bubble:not(.own.align-own) header {
+    min-height: var(--avatar-size-small);
+    padding-inline-start: calc(var(--avatar-size-small) + var(--space-200));
+  }
+
+  /* Bubbles hug their own edge, with a consistent gap on the opposite side.
+     The content becomes a wrapping row: header and replies take a full line,
+     and the message column shrinks to its bubble so the encryption shield can
+     sit right beside it. */
+  .message.layout-bubble .message-content {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-end: var(--rlrk-bubble-gap);
+  }
+
+  .message.layout-bubble.own.align-own .message-content {
+    flex-direction: row-reverse;
+    padding-inline: var(--rlrk-bubble-gap) 0;
+  }
+
+  .message.layout-bubble .message-content > * {
+    flex: 0 0 100%;
+  }
+
+  .message.layout-bubble .message-content > .message-main {
+    flex: 0 1 auto;
+  }
+
+  /* Leave room on the line for the shield so long messages don't push it
+     onto a line of its own. */
+  .message.layout-bubble .message-content:has(> .message-crypto-status) > .message-main {
+    max-width: calc(100% - var(--font-size-body) - 2 * var(--space-200));
+  }
+
+  .message.layout-bubble .message-content > .message-crypto-status {
+    align-self: center;
+    flex: none;
+    margin: 0 var(--space-200);
+  }
+
+  .message.layout-bubble.collapsed {
+    padding-inline: var(--page-gutter) !important;
+  }
+
+  /* Images, videos, galleries and stickers go unwrapped; their side of the
+     screen already says who sent them. A caption gets its own small bubble. */
+  .message.layout-bubble .message-main .content-bubble:has(.image, .media-frame-video, .gallery, .sticker) {
+    background: none !important;
+    border-color: transparent !important;
+    padding: 0 !important;
+  }
+
+  .message.layout-bubble .message-main .content-bubble:has(.image, .media-frame-video, .gallery, .sticker)
+    :is(p.body, .formatted-body) {
+    background: var(--surface-var-container);
+    border-radius: var(--radius);
+    color: var(--surface-var-on-container);
+    margin-block-start: var(--space-100);
+    padding: var(--space-200) var(--space-300);
+    width: fit-content;
+  }
+
+  .message.layout-bubble.own .message-main .content-bubble:has(.image, .media-frame-video, .gallery, .sticker)
+    :is(p.body, .formatted-body) {
+    background: var(--primary-container);
+    color: var(--primary-on-container);
+  }
+
+  .message.layout-bubble.own.align-own .message-main .content-bubble:has(.image, .media-frame-video, .gallery, .sticker)
+    :is(p.body, .formatted-body) {
+    margin-inline-start: auto;
+  }
+
+  /* Timestamp sits right after the name on both sides, so the two layouts
+     mirror each other (own headers are already row-reversed). */
+  .message.layout-bubble header .message-details {
+    flex-grow: 0 !important;
+  }
+
+  /* Things that lived in the avatar column (per-message times, the sending
+     spinner) move into the gap instead. */
+  .message.layout-bubble > .collapsed-pending {
+    inset-inline: auto var(--page-gutter) !important;
+    width: auto !important;
+  }
+
+  .message.layout-bubble.own.align-own > .collapsed-pending {
+    inset-inline: var(--page-gutter) auto !important;
+  }
+}

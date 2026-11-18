@@ -1,0 +1,161 @@
+/*
+@sable-theme
+id: mssj-light
+name: mssj Light
+author: wreck
+kind: light
+contrast: low
+tags: purple, mauve, light, mssj, mobile
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/mssj-light.sable.css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Palette from www.mssj.me: plum #492e46 -> #1d121c, mauve #935d8c,
+   orchid #c79cc8, lavender #a89cc8, sky #8cc9f0, blush #efa8b0, logo indigo #230052 */
+body.sable-remote-theme {
+  /* Background */
+  --sable-bg-container: #faf6f9;
+  --sable-bg-container-hover: #f3ecf2;
+  --sable-bg-container-active: #eadfe8;
+  --sable-bg-container-line: #e0d2dd;
+  --sable-bg-on-container: #2e1f2c;
+  /* Surface */
+  --sable-surface-container: #ffffff;
+  --sable-surface-container-hover: #faf6f9;
+  --sable-surface-container-active: #f3ecf2;
+  --sable-surface-container-line: #e6dbe4;
+  --sable-surface-on-container: #2e1f2c;
+  /* Surface Variant */
+  --sable-surface-var-container: #f1e8ef;
+  --sable-surface-var-container-hover: #e8dbe5;
+  --sable-surface-var-container-active: #d6c3d3;
+  --sable-surface-var-container-line: #b79fb3;
+  --sable-surface-var-on-container: #3d2a3b;
+  /* Primary */
+  --sable-primary-main: #935d8c;
+  --sable-primary-main-hover: #85527e;
+  --sable-primary-main-active: #784a72;
+  --sable-primary-main-line: #6b4166;
+  --sable-primary-on-main: #ffffff;
+  --sable-primary-container: #f1e1ef;
+  --sable-primary-container-hover: #ead5e7;
+  --sable-primary-container-active: #e2c9df;
+  --sable-primary-container-line: #d6b8d2;
+  --sable-primary-on-container: #492e46;
+  /* Secondary */
+  --sable-sec-main: #6f6496;
+  --sable-sec-main-hover: #635a88;
+  --sable-sec-main-active: #58507a;
+  --sable-sec-main-line: #4d466c;
+  --sable-sec-on-main: #ffffff;
+  --sable-sec-container: #ebe7f5;
+  --sable-sec-container-hover: #e1dcef;
+  --sable-sec-container-active: #d7d0e9;
+  --sable-sec-container-line: #c9c0e0;
+  --sable-sec-on-container: #3b3456;
+  /* Success */
+  --sable-success-main: #017343;
+  --sable-success-main-hover: #01683c;
+  --sable-success-main-active: #016239;
+  --sable-success-main-line: #015c36;
+  --sable-success-on-main: #ffffff;
+  --sable-success-container: #cfe8dc;
+  --sable-success-container-hover: #c3e1d3;
+  --sable-success-container-active: #b6dac9;
+  --sable-success-container-line: #a9d3bf;
+  --sable-success-on-container: #01512f;
+  /* Warning */
+  --sable-warn-main: #864300;
+  --sable-warn-main-hover: #793c00;
+  --sable-warn-main-active: #723900;
+  --sable-warn-main-line: #6b3600;
+  --sable-warn-on-main: #ffffff;
+  --sable-warn-container: #f1e1cf;
+  --sable-warn-container-hover: #ebd7c2;
+  --sable-warn-container-active: #e5cdb5;
+  --sable-warn-container-line: #dfc3a8;
+  --sable-warn-on-container: #5e2f00;
+  /* Critical */
+  --sable-crit-main: #a3263a;
+  --sable-crit-main-hover: #932234;
+  --sable-crit-main-active: #8a2031;
+  --sable-crit-main-line: #811e2e;
+  --sable-crit-on-main: #ffffff;
+  --sable-crit-container: #f7dadd;
+  --sable-crit-container-hover: #f2ccd0;
+  --sable-crit-container-active: #edbec3;
+  --sable-crit-container-line: #e8b0b6;
+  --sable-crit-on-container: #6e1424;
+  /* Other */
+  --sable-focus-ring: rgba(140, 201, 240, 0.8);
+  --sable-shadow: rgba(73, 46, 70, 0.12);
+  --sable-overlay: rgba(29, 18, 28, 0.45);
+
+  --font-family: 'Source Sans 3', 'Source Sans Pro', var(--font-family-emoji), Helvetica, sans-serif;
+}
+
+/* Rail: the site's mauve page background */
+body.sable-remote-theme .rail {
+  background: linear-gradient(180deg, #935d8c 0%, #7a4b74 100%);
+  --bg-on-container: #ffffff;
+  --surface-on-container: #ffffff;
+  --primary-main: #ffffff;
+  --primary-on-main: #492e46;
+  --bg-container: #935d8c;
+  --bg-container-hover: rgba(255, 255, 255, 0.15);
+  --surface-container: #7a4b74;
+  --surface-container-line: rgba(255, 255, 255, 0.35);
+  --bg-container-line: rgba(255, 255, 255, 0.35);
+  --surface-container-hover: rgba(255, 255, 255, 0.15);
+  --surface-container-active: rgba(255, 255, 255, 0.25);
+}
+
+/* mm logo: replaces the Sable mark on the home page */
+body.sable-remote-theme .home-page .brand-mark {
+  content: url('https://www.mssj.me/images/logo3.png');
+  border-radius: var(--radii-500);
+}
+
+/* Mobile siderail-to-top (from tweaks/mobile-siderail-to-top.sable.css) */
+.mobile-navigation .navigation-main { flex-direction: column; }
+
+.mobile-navigation .rail {
+  flex: 0 0 auto;
+  width: auto;
+  border-right: 0;
+  border-bottom: var(--border-width) solid var(--bg-container-line);
+}
+
+.mobile-navigation .rail-scroll {
+  display: flex;
+  align-items: center;
+  overflow: auto hidden;
+}
+
+.mobile-navigation .rail-stack {
+  flex: none;
+  flex-direction: row;
+  padding: var(--space-200) var(--space-300);
+}
+
+.mobile-navigation .rail-separator {
+  flex: none;
+  width: var(--border-width);
+  height: 1.5rem;
+  margin: 0;
+}
+
+.mobile-navigation .rail .nav-tab-side::before {
+  border-radius: var(--radii-300) var(--radii-300) 0 0;
+  width: 1.5rem;
+  height: 5px;
+  left: calc(50% - 0.75rem);
+  bottom: calc(-1 * var(--space-200) - var(--border-width));
+  transform: none !important;
+}
+.mobile-navigation .rail .nav-tab-side:hover { transform: none !important; }
+
+body.sable-remote-theme .mobile-navigation .rail {
+  background: linear-gradient(90deg, #935d8c 0%, #7a4b74 100%);
+}

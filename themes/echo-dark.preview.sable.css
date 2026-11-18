@@ -1,0 +1,20 @@
+/*
+@sable-theme
+id: echo-dark
+name: echo Dark
+author: wreck
+kind: dark
+contrast: low
+tags: echo, warm, inter, dark
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/echo-dark.sable.css
+*/
+
+.sable-theme-preview {
+  --sable-bg-container: #28282d;
+  --sable-bg-on-container: #efe7e1;
+  --sable-surface-container: #202024;
+  --sable-surface-container-line: #46464e;
+  --sable-surface-on-container: #efe7e1;
+  --sable-primary-main: #f0e2d8;
+  --sable-primary-on-main: #28282d;
+}

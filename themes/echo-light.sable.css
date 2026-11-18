@@ -1,0 +1,1588 @@
+/*
+@sable-theme
+id: echo-light
+name: echo Light
+author: wreck
+kind: light
+contrast: low
+tags: echo, green, inter, light
+fullThemeUrl: https://git.sable.moe/SableClient/themes/raw/branch/main/themes/echo-light.sable.css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&display=swap');
+
+/* Design ported from echo (https://github.com/taylorbird/echo), a fork of
+   Sable: white ground, black text, echo's green accent and grey panes, with
+   the same raised/recessed pane structure as echo Dark. Layout and geometry
+   only apply on desktop (width >= 48rem); the phone layout stays Sable's. */
+
+body.sable-remote-theme {
+  /* Background (Sable's light defaults) */
+  --sable-bg-container: #fff;
+  --sable-bg-container-hover: #f4f4f5;
+  --sable-bg-container-active: #e4e4e7;
+  --sable-bg-container-line: #d4d4d8;
+  --sable-bg-on-container: #18181b;
+  /* Surface (Sable's light defaults) */
+  --sable-surface-container: #f4f4f5;
+  --sable-surface-container-hover: #fff;
+  --sable-surface-container-active: #e4e4e7;
+  --sable-surface-container-line: #d4d4d8;
+  --sable-surface-on-container: #18181b;
+  /* Surface Variant (Sable's light defaults) */
+  --sable-surface-var-container: #e4e4e7;
+  --sable-surface-var-container-hover: #d4d4d8;
+  --sable-surface-var-container-active: #a1a1aa;
+  --sable-surface-var-container-line: #71717a;
+  --sable-surface-var-on-container: #27272a;
+  /* Primary: echo's green */
+  --sable-primary-main: #00a344;
+  --sable-primary-main-hover: #00963e;
+  --sable-primary-main-active: #008a39;
+  --sable-primary-main-line: #007d34;
+  --sable-primary-on-main: #fff;
+  --sable-primary-container: #d6f2e0;
+  --sable-primary-container-hover: #c6ecd4;
+  --sable-primary-container-active: #b6e6c8;
+  --sable-primary-container-line: #a6e0bc;
+  --sable-primary-on-container: #00431c;
+  /* Secondary (Sable's light defaults) */
+  --sable-sec-main: #514861;
+  --sable-sec-main-hover: #453e54;
+  --sable-sec-main-active: #3b3447;
+  --sable-sec-main-line: #312e3b;
+  --sable-sec-on-main: #fff;
+  --sable-sec-container: #eae8f0;
+  --sable-sec-container-hover: #dedce8;
+  --sable-sec-container-active: #d2d0e0;
+  --sable-sec-container-line: #c6c4d8;
+  --sable-sec-on-container: #2d235c;
+  /* Success (Sable's light defaults) */
+  --sable-success-main: #017343;
+  --sable-success-main-hover: #01683c;
+  --sable-success-main-active: #016239;
+  --sable-success-main-line: #015c36;
+  --sable-success-on-main: #fff;
+  --sable-success-container: #bfdcd0;
+  --sable-success-container-hover: #b3d5c7;
+  --sable-success-container-active: #a6cebd;
+  --sable-success-container-line: #99c7b4;
+  --sable-success-on-container: #01512f;
+  /* Warning (Sable's light defaults) */
+  --sable-warn-main: #864300;
+  --sable-warn-main-hover: #793c00;
+  --sable-warn-main-active: #723900;
+  --sable-warn-main-line: #6b3600;
+  --sable-warn-on-main: #fff;
+  --sable-warn-container: #e1d0bf;
+  --sable-warn-container-hover: #dbc7b2;
+  --sable-warn-container-active: #d5bda6;
+  --sable-warn-container-line: #cfb499;
+  --sable-warn-on-container: #5e2f00;
+  /* Critical (Sable's light defaults) */
+  --sable-crit-main: #9d0f0f;
+  --sable-crit-main-hover: #8d0e0e;
+  --sable-crit-main-active: #850d0d;
+  --sable-crit-main-line: #7e0c0c;
+  --sable-crit-on-main: #fff;
+  --sable-crit-container: #e7c3c3;
+  --sable-crit-container-hover: #e2b7b7;
+  --sable-crit-container-active: #ddabab;
+  --sable-crit-container-line: #d89f9f;
+  --sable-crit-on-container: #6e0b0b;
+  /* Other */
+  --sable-focus-ring: rgb(0 163 68 / 45%);
+  --sable-shadow: rgb(0 0 0 / 10%);
+  --sable-overlay: rgb(0 0 0 / 40%);
+  --tc-link: #0467dd;
+
+  /* Type: Inter for the UI, Fira Code for code */
+  --font-family: 'Inter', var(--font-family-emoji), -apple-system, sans-serif;
+  --font-family-mono: 'Fira Code', monospace;
+
+  /* echo's own tokens (light scheme) */
+  --echo-warm-rgb: 254 205 178;
+  --echo-accent-glow: #ffe484;
+  --echo-accent-near: rgb(255 228 132 / 75%);
+  --echo-accent-far: rgb(255 228 132 / 35%);
+  --echo-room-glow: #85f0a8;
+  --echo-room-near: rgb(133 240 168 / 75%);
+  --echo-room-far: rgb(133 240 168 / 35%);
+  --echo-text: #000;
+  --echo-text-2: #5f5f5f;
+  --echo-text-semi: #555;
+  --echo-chat: #fff;
+  --echo-rail: #cbcbcc;
+  --echo-roomlist: #e0dfe0;
+  --echo-composer: #f0f0f0;
+  --echo-timeline-hover: #eee;
+  --echo-border: #ccc;
+  --echo-hairline: rgb(0 0 0 / 8%);
+  --echo-hover: rgb(0 0 0 / 10%);
+  --echo-button-hover: rgb(0 0 0 / 20%);
+  --echo-code-bg: rgb(0 0 0 / 15%);
+  --echo-pill-bg: #ccc;
+  --echo-timeline-highlight: rgb(255 255 0 / 10%);
+  --echo-modal-shadow: rgb(0 0 0 / 10%);
+  --echo-entry-hover: rgb(0 0 0 / 7.5%);
+  --echo-entry-selected: rgb(0 0 0 / 12.5%);
+  --echo-entry-active: rgb(var(--echo-warm-rgb) / 24%);
+  --echo-row-hairline: rgb(var(--echo-warm-rgb) / 8%);
+  --echo-section-ink: var(--echo-text);
+  --echo-room-name: var(--echo-text);
+  --echo-unread-notify: rgb(50 150 0 / 70%);
+  --echo-unread-highlight: rgb(200 0 0 / 70%);
+  --echo-unread-ink: #fff;
+  --echo-unread-highlight-ink: #fff;
+  --echo-reply-border: color-mix(in oklab, var(--echo-text-2) 55%, transparent);
+  --echo-primary: #00c853;
+  --echo-on-primary: #fff;
+  --echo-header-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+  --echo-blue-near: transparent;
+  --echo-red-near: transparent;
+  --echo-space-message: rgb(0 0 0 / 35%);
+  --echo-space-highlight: rgb(200 0 0 / 70%);
+  --echo-space-ink: #fff;
+  --echo-rail-footer-height: 18.5rem;
+  /* Raised panes and recessed chat, softened for a white ground */
+  --echo-pane-edge: rgb(0 0 0 / 6%);
+  --echo-pane-shadow: rgb(0 0 0 / 16%);
+  --echo-chat-inset: rgb(0 0 0 / 14%);
+}
+
+/* ---------- Frame ---------- */
+@media (width >= 48rem) {
+  /* echo's sizes are drawn on a 14px root; page zoom still scales it. */
+  html:has(body.sable-remote-theme) {
+    --navigation-rail-width: 5.25rem;
+    --header-height: 3.5rem;
+    --font-size-body: calc(1rem * var(--text-scale));
+    --font-size-label: calc(0.875rem * var(--text-scale));
+    --font-size-small: calc(0.8125rem * var(--text-scale));
+    --font-size-x-small: calc(0.75rem * var(--text-scale));
+    --font-size-editor: calc(1rem * var(--text-scale));
+    --font-size-heading: calc(1.125rem * var(--text-scale));
+    --radius: 0.5rem;
+
+    background: #fff;
+    font-size: calc(14px * var(--font-scale));
+  }
+
+  body.sable-remote-theme {
+    background: var(--echo-chat);
+    color: var(--echo-text);
+  }
+
+  /* The reading surface: opaque, square, the chat colour. */
+  body.sable-remote-theme .drawer-panel.content-panel {
+    --surface-container: var(--echo-chat);
+    --surface-container-hover: var(--echo-timeline-hover);
+    --surface-on-container: var(--echo-text);
+
+    background: var(--echo-chat);
+    color: var(--echo-text);
+  }
+
+  /* The chat is recessed under the panes either side of it. */
+  body.sable-remote-theme .content-panel > .content {
+    background: var(--echo-chat);
+    box-shadow: inset 10px 0 10px -10px var(--echo-chat-inset);
+  }
+
+  /* Hand cursors are a web idiom; echo is a desktop app. */
+  body.sable-remote-theme .app-shell :is(a, button, [role='button']) {
+    cursor: default;
+  }
+
+  /* Down to the window's bottom edge, so no ground shows under the room list. */
+  body.sable-remote-theme .app-shell .sidebar {
+    bottom: 0;
+    height: auto;
+  }
+}
+
+/* ---------- Rail ---------- */
+@media (width >= 48rem) {
+  body.sable-remote-theme .sidebar .rail {
+    background: var(--echo-rail);
+    border-right: 1px solid var(--echo-hairline);
+    color: var(--echo-text-2);
+  }
+
+  /* Room for the tools footer stacked over the rail's bottom. */
+  body.sable-remote-theme .sidebar .rail-scroll {
+    padding-bottom: var(--echo-rail-footer-height);
+  }
+
+  body.sable-remote-theme .sidebar .rail-stack {
+    gap: 0;
+    padding: 0.3125rem 0;
+  }
+
+  /* Engraved divider: a dark groove with a warm lip. */
+  body.sable-remote-theme .sidebar .rail-separator {
+    background: rgb(0 0 0 / 40%);
+    block-size: 1px;
+    box-shadow: 0 1px 0 rgb(var(--echo-warm-rgb) / 8%);
+    margin: 0.5rem auto;
+    width: 2.5rem;
+  }
+
+  /* Tiles: 3.125rem, holding a 2.5rem avatar. */
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side {
+    border: 0;
+    border-radius: 0.7813rem;
+    color: inherit;
+    height: 3.125rem;
+    margin: 0.3125rem auto;
+    padding: 0.3125rem;
+    transform: none;
+    width: 3.125rem;
+  }
+
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side:is(:hover, :focus-visible) {
+    background: var(--echo-entry-hover);
+    color: var(--echo-text);
+    outline: none;
+    transform: none;
+  }
+
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side:is([aria-current='page'], [data-current='true']) {
+    background: var(--echo-entry-selected);
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .rail .nav-tab.selection-layer::after {
+    content: none;
+  }
+
+  /* The glow pill: echo's one "you are here" mark. */
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side::before {
+    background: var(--echo-accent-glow);
+    border-radius: 999px;
+    box-shadow:
+      0 0 6px var(--echo-accent-near),
+      0 0 14px var(--echo-accent-far);
+    display: none;
+    height: 1.5625rem;
+    inset-block: 0;
+    left: -0.75rem;
+    margin-block: auto;
+    transform: none;
+    translate: none;
+    width: 0.1875rem;
+  }
+
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side:is([aria-current='page'], [data-current='true'])::before {
+    display: block;
+    transform: none;
+  }
+
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side:hover::before {
+    transform: none;
+  }
+
+  body.sable-remote-theme .rail .nav-tab.nav-tab-side:not([aria-current='page'], [data-current='true']):hover::before {
+    display: none;
+  }
+
+  /* Glyphs sit well inside the tile. */
+  body.sable-remote-theme .rail .icon > svg,
+  body.sable-remote-theme .desktop-tools .desktop-tool > svg,
+  body.sable-remote-theme .desktop-tools .tool-icon > svg {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+
+  /* Places are squircles, people are round. */
+  body.sable-remote-theme .rail .nav-tab .avatar-root {
+    --avatar-size: 2.5rem;
+
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+  }
+
+  body.sable-remote-theme .rail .nav-tab[href^='/direct/'] .avatar-root {
+    border-radius: 50%;
+  }
+
+  /* Folders: a closed folder previews a 2x2 grid of small squircles. */
+  body.sable-remote-theme .rail .folder-preview .folder-tiles {
+    gap: 0.25rem;
+  }
+
+  body.sable-remote-theme .rail .folder-preview .avatar-root.folder-tile {
+    --avatar-size: 1.125rem;
+
+    border-radius: 0.3125rem;
+    font-size: 0.5625rem;
+  }
+
+  /* An open folder: a rounded card sized for the larger tiles. */
+  body.sable-remote-theme .rail .folder-open {
+    width: auto;
+  }
+
+  body.sable-remote-theme .rail .folder-open .folder-card {
+    border-color: var(--echo-hairline);
+    border-radius: 1.125rem;
+    padding: 0.25rem 0.375rem;
+  }
+
+  body.sable-remote-theme .folder-card .rail-slot.nested .nav-tab.nav-tab-side {
+    margin-block: 0.1875rem;
+  }
+
+  /* Tile badges ride the lower right corner, in the space palette. */
+  body.sable-remote-theme .rail .nav-tab .unread-badge {
+    inset: auto -0.0625rem -0.0625rem auto;
+  }
+
+  body.sable-remote-theme .rail .nav-tab .unread-badge-count {
+    background: var(--echo-space-message);
+    border-radius: 1rem;
+    color: var(--echo-space-ink);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    height: 1rem;
+    line-height: 1;
+    min-width: 1rem;
+    padding: 0.5px 0.25rem 0;
+  }
+
+  body.sable-remote-theme .rail .nav-tab .unread-badge-dot {
+    background: var(--echo-space-message);
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+  body.sable-remote-theme .rail .nav-tab .unread-badge.unread-badge-highlight {
+    background: var(--echo-space-highlight);
+  }
+
+  /* A DM tile is one room, so it wears the room list's tiers. */
+  body.sable-remote-theme .rail .nav-tab[href^='/direct/'] .unread-badge-count {
+    background: var(--echo-unread-notify);
+    box-shadow: 0 0 5px var(--echo-blue-near);
+    color: var(--echo-unread-ink);
+  }
+
+  body.sable-remote-theme .rail .nav-tab[href^='/direct/'] .unread-badge.unread-badge-highlight {
+    background: var(--echo-unread-highlight);
+    box-shadow: 0 0 5px var(--echo-red-near);
+    color: var(--echo-unread-highlight-ink);
+  }
+
+  /* The footer: Sable's quick tools, stacked at the foot of the rail. */
+  body.sable-remote-theme .sidebar .desktop-navigation {
+    position: relative;
+  }
+
+  body.sable-remote-theme .sidebar nav.desktop-tools {
+    align-items: center;
+    background: var(--echo-rail);
+    border: 0;
+    border-right: 1px solid var(--echo-hairline);
+    bottom: 0;
+    box-shadow: 0 -1px 0 var(--echo-hairline);
+    color: var(--echo-text-2);
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: flex-end;
+    left: 0;
+    min-height: 0;
+    padding: 0.5rem 0 0.625rem;
+    position: absolute;
+    width: var(--navigation-rail-width);
+    z-index: 2;
+  }
+
+  /* The profile sits just above settings; the other tools go above it. */
+  body.sable-remote-theme .sidebar .desktop-tools .desktop-tool-actions {
+    display: contents;
+  }
+
+  body.sable-remote-theme .sidebar .desktop-tools > .quick-tool {
+    order: 1;
+  }
+
+  body.sable-remote-theme .sidebar .desktop-tools .quick-tool[href='/settings'] {
+    order: 2;
+  }
+
+  body.sable-remote-theme .sidebar .desktop-tools .nav-tab.desktop-tool {
+    border: 0;
+    border-radius: 0.7813rem;
+    color: inherit;
+    height: 3.125rem;
+    transform: none;
+    width: 3.125rem;
+  }
+
+  body.sable-remote-theme .sidebar .desktop-tools .nav-tab.desktop-tool:is(:hover, :focus-visible) {
+    background: var(--echo-entry-hover);
+    color: var(--echo-text);
+    outline: none;
+    transform: none;
+  }
+
+  body.sable-remote-theme .sidebar .desktop-tools .nav-tab.desktop-tool[aria-current='page'] {
+    background: var(--echo-entry-selected);
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .sidebar .desktop-tools .nav-tab.desktop-tool::before {
+    content: none;
+  }
+
+  body.sable-remote-theme .desktop-tools .desktop-tool.nav-tab .avatar-root {
+    --avatar-size: 2.1875rem;
+
+    border-radius: 50%;
+  }
+
+  body.sable-remote-theme .desktop-tools .nav-tab .unread-badge {
+    inset: auto 0.125rem 0.125rem auto;
+  }
+}
+
+/* ---------- Room list ---------- */
+@media (width >= 48rem) {
+  /* Raised over the chat's left edge. */
+  body.sable-remote-theme .sidebar .room-nav {
+    background: var(--echo-roomlist);
+    border-right: 0;
+    box-shadow:
+      1px 0 0 var(--echo-pane-edge),
+      8px 0 24px var(--echo-pane-shadow);
+    color: var(--echo-text);
+    position: relative;
+    z-index: 3;
+  }
+
+  /* The header shares --header-height with the room header. */
+  body.sable-remote-theme .sidebar .room-nav-header {
+    flex-basis: var(--header-height);
+    min-height: var(--header-height);
+    padding: 0 0.5rem 0 1rem;
+    position: relative;
+  }
+
+  body.sable-remote-theme .sidebar .room-nav-header h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  /* Header icons sit at the right edge: the list menu last. */
+  body.sable-remote-theme .sidebar .room-nav-header .room-nav-menu {
+    color: var(--echo-text);
+    height: 2.5rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    translate: 0 -50%;
+    width: 2.5rem;
+  }
+
+  body.sable-remote-theme .room-nav:has(.room-nav-actions:not(.collapsed)) .room-nav-header {
+    padding-right: calc(0.5rem + 4 * 2.5rem);
+  }
+
+  /* Create, explore and search: square icon buttons lifted into the header. */
+  body.sable-remote-theme .sidebar .room-nav-actions:not(.collapsed) {
+    align-items: center;
+    display: flex;
+    gap: 0;
+    height: var(--header-height);
+    padding: 0;
+    position: absolute;
+    right: calc(0.5rem + 2.5rem);
+    top: 0;
+    z-index: 1;
+  }
+
+  body.sable-remote-theme .room-nav-actions:not(.collapsed) :is(.nav-action, .room-nav-trigger) {
+    border-radius: 0.25rem;
+    flex: none;
+    height: 2.5rem;
+    justify-content: center;
+    min-height: 0;
+    padding: 0;
+    width: 2.5rem;
+  }
+
+  body.sable-remote-theme .room-nav-actions:not(.collapsed) :is(.nav-action, .room-nav-trigger):is(:hover, :focus-visible) {
+    background: var(--echo-button-hover);
+    outline: none;
+  }
+
+  /* Labels stay for screen readers. */
+  body.sable-remote-theme .room-nav-actions:not(.collapsed) .room-text {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  body.sable-remote-theme .room-nav-actions .room-icon > svg {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  /* Section headings: no box on hover; the caret answers instead. */
+  body.sable-remote-theme .sidebar .room-nav .rooms-heading {
+    border-radius: 0.5rem;
+    color: var(--echo-section-ink);
+    gap: 0.5rem;
+    height: 2.25rem;
+    margin: 0.25rem 0.5rem 0;
+    opacity: 1;
+    padding: 0 0.375rem 0 0.5rem;
+    width: calc(100% - 1rem);
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .rooms-heading.rooms-heading:is(:hover, :focus-visible) {
+    background: none;
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .rooms-heading:focus-visible {
+    outline: 2px solid var(--echo-section-ink);
+    outline-offset: -2px;
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .rooms-heading[data-state='closed'] {
+    opacity: 0.6;
+  }
+
+  /* A kind glyph before each heading: star, two people, one person. */
+  body.sable-remote-theme .room-nav .rooms-heading::before {
+    --echo-heading-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E");
+
+    background: currentcolor;
+    content: '';
+    flex: none;
+    height: 1.125rem;
+    mask: var(--echo-heading-glyph) center / contain no-repeat;
+    opacity: 0.85;
+    width: 1.125rem;
+  }
+
+  body.sable-remote-theme .rooms-heading:has(+ .favourites)::before {
+    --echo-heading-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'/%3E%3C/svg%3E");
+  }
+
+  body.sable-remote-theme .room-nav:has(a.nav-action[href$='direct']) .rooms-heading:not(:has(+ .favourites))::before {
+    --echo-heading-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E");
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .rooms-heading-label {
+    font-size: 1rem;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .category-caret {
+    flex-basis: 1.125rem;
+    height: 1.125rem;
+    margin-left: auto;
+    opacity: 0.45;
+    width: 1.125rem;
+  }
+
+  body.sable-remote-theme .room-nav .rooms-heading:hover > .category-caret {
+    opacity: 1;
+  }
+
+  body.sable-remote-theme .room-nav .category-caret > svg {
+    height: 1.125rem;
+    width: 1.125rem;
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .room-category {
+    color: var(--echo-section-ink);
+    font-size: 0.875rem;
+    font-weight: 700;
+    min-height: 2.25rem;
+    opacity: 1;
+    padding-left: calc(1rem + 10px + var(--room-depth, 0) * 1rem);
+  }
+
+  body.sable-remote-theme .sidebar .room-nav .room-list:not(.collapsed) {
+    padding: 0 0 0.5rem;
+  }
+
+  /* Rows: full-bleed and square, a hairline between them. */
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap {
+    border-radius: 0;
+    contain-intrinsic-size: auto 5rem;
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap:is(:hover, :focus-within) {
+    background: var(--echo-entry-hover);
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap + .room-row-wrap {
+    box-shadow: inset 0 1px 0 var(--echo-row-hairline);
+  }
+
+  /* The glow bar's lane, centred in the first 1rem. */
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap::before {
+    background: var(--echo-bar, transparent);
+    border-radius: 999px;
+    box-shadow:
+      0 0 6px var(--echo-bar-near, transparent),
+      0 0 14px var(--echo-bar-far, transparent);
+    content: '';
+    height: 2rem;
+    left: calc((1rem - 0.1875rem) / 2);
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 0.1875rem;
+  }
+
+  /* The open room: a flat warm wash and the green bar. */
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap:has(.unread-badge, *):has([aria-current='page']) {
+    --echo-bar: var(--echo-room-glow);
+    --echo-bar-near: var(--echo-room-near);
+    --echo-bar-far: var(--echo-room-far);
+
+    background: var(--echo-entry-active);
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) .room-row.selection-layer {
+    align-items: center;
+    background: transparent;
+    border-radius: 0;
+    font-weight: 400;
+    gap: 0.25rem;
+    height: 5rem;
+    padding: 0.5rem 0.5rem 0.5rem calc(1rem + 10px + var(--room-depth, 0) * 1rem);
+  }
+
+  /* No options button on rows: right-click or long-press opens the menu. */
+  body.sable-remote-theme .room-list:not(.collapsed) .room-options-slot {
+    display: none;
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap .room-status.room-status {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) > .room-row-wrap .room-row.selection-layer.selection-layer {
+    padding-right: 0.5rem;
+  }
+
+  /* The avatar lane: 3.5rem holding a 2.5rem round avatar. */
+  body.sable-remote-theme .room-list:not(.collapsed) .room-avatar,
+  body.sable-remote-theme .room-list:not(.collapsed) .room-row > .room-icon {
+    flex: 0 0 3.5rem;
+    height: 3rem;
+    justify-content: flex-start;
+    width: 3.5rem;
+  }
+
+  body.sable-remote-theme .room-list .room-avatar > .room-avatar-icon {
+    --avatar-size: 2.5rem;
+
+    border-radius: 50%;
+    font-size: 1rem;
+    margin: 0.25rem;
+  }
+
+  /* Rooms without a picture: their kind glyph on a quiet disc. */
+  body.sable-remote-theme .room-list .room-avatar > .room-avatar-icon.glyph {
+    background: var(--echo-entry-hover);
+    opacity: 1;
+  }
+
+  body.sable-remote-theme .room-list .room-avatar-icon.room-avatar-icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  body.sable-remote-theme .room-list .room-row .room-avatar-icon.room-avatar-icon::after {
+    content: none;
+  }
+
+  /* Name on the first line; everything else spans the row below. */
+  body.sable-remote-theme .room-list:not(.collapsed) .room-text {
+    display: grid;
+    gap: 0.125rem 0.625rem;
+    grid-template-columns: minmax(0, max-content) 1fr;
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) .room-text > * {
+    grid-column: 1 / -1;
+  }
+
+  body.sable-remote-theme .room-list:not(.collapsed) .room-text > .room-name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* Room names are one colour; state is the wash, bar and badge. */
+  body.sable-remote-theme .room-list:not(.collapsed) .room-row .room-name {
+    color: var(--echo-room-name);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  /* The badge lane. */
+  body.sable-remote-theme .room-list:not(.collapsed) .room-row .room-status {
+    justify-content: center;
+    margin-right: 0.25rem;
+    min-width: 0;
+    width: 3rem;
+  }
+
+  /* No notification-mode icon on rows; the mode lives in the room menu. */
+  body.sable-remote-theme .room-row .room-status > .room-mode {
+    display: none;
+  }
+}
+
+/* ---------- Room header, timeline, composer ---------- */
+@media (width >= 48rem) {
+  /* Room header: no rule under it, a soft cast shadow instead. */
+  body.sable-remote-theme .room-view .panel-header.room-header {
+    background: var(--echo-roomlist);
+    border-bottom: 0;
+    box-shadow: var(--echo-header-shadow);
+    gap: 0.625rem;
+    padding: 0 0.5rem 0 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  body.sable-remote-theme .room-header .prefix > .room-avatar {
+    --avatar-size: 3rem;
+
+    border-radius: 50%;
+    font-size: 1.25rem;
+  }
+
+  body.sable-remote-theme .room-header .room-identity > h1,
+  body.sable-remote-theme .room-header .room-identity.with-topic > h1 {
+    color: var(--echo-room-name);
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  body.sable-remote-theme .room-header .room-identity > .room-topic {
+    color: var(--echo-text-2);
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+
+  body.sable-remote-theme .room-header .suffix {
+    gap: 0;
+  }
+
+  body.sable-remote-theme .room-header .suffix > .panel-header-button {
+    --button-height: 2.5rem;
+
+    border-radius: 0.5rem;
+    color: var(--echo-text);
+    position: relative;
+  }
+
+  body.sable-remote-theme .room-header .panel-header-button > svg {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  /* The open panel's button: filled, with the glow pill on its bottom edge. */
+  body.sable-remote-theme .room-header .suffix > .panel-header-button[aria-pressed='true'] {
+    background: var(--echo-entry-selected);
+  }
+
+  body.sable-remote-theme .room-header .suffix > .panel-header-button[aria-pressed='true']::before {
+    background: var(--echo-accent-glow);
+    border-radius: 999px;
+    bottom: 0.25rem;
+    box-shadow:
+      0 0 6px var(--echo-accent-near),
+      0 0 14px var(--echo-accent-far);
+    content: '';
+    height: 0.1875rem;
+    left: 50%;
+    position: absolute;
+    translate: -50% 0;
+    width: 1.25rem;
+  }
+
+  /* Timeline geometry. */
+  body.sable-remote-theme .timeline-content .items {
+    --avatar-size-small: 2.5rem;
+    --page-gutter: 1.5rem;
+    --timeline-group-gap: 1.25rem;
+    --timeline-row-gap: 1rem;
+    --timeline-row-padding: 0.125rem;
+  }
+
+  body.sable-remote-theme .timeline-content .message > .avatar-button,
+  body.sable-remote-theme .timeline-content .message > .avatar-root.message-avatar {
+    translate: 0 2px;
+  }
+
+  body.sable-remote-theme .timeline-content .message .message-avatar {
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+
+  body.sable-remote-theme .timeline-content .message.layout-modern:hover,
+  body.sable-remote-theme .timeline-content .message.layout-modern.menu-open {
+    background-color: var(--echo-timeline-hover);
+  }
+
+  body.sable-remote-theme .timeline-content .message-main {
+    color: var(--echo-text);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Sender row: the name centred on the avatar, the time right after it. */
+  body.sable-remote-theme .timeline-content .message header {
+    gap: 0.25rem;
+    min-height: calc(2.5rem - 0.25rem);
+  }
+
+  body.sable-remote-theme .timeline-content header .sender.name-button {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+  }
+
+  body.sable-remote-theme .items header > div.message-details {
+    flex-grow: 1;
+    font-size: 0.7rem;
+    justify-content: flex-start;
+  }
+
+  body.sable-remote-theme .timeline-content .message-details > time {
+    color: var(--echo-text-2);
+    opacity: 0.5;
+    order: -1;
+  }
+
+  body.sable-remote-theme .timeline-content .message .edited {
+    color: var(--echo-text-2);
+    font-size: 0.7rem;
+  }
+
+  /* Mentions of you: a gold wash, no side bar. */
+  body.sable-remote-theme .timeline-content .message.mention-loud,
+  body.sable-remote-theme .timeline-content .message.mention-silent {
+    background: var(--echo-timeline-highlight);
+    border-inline-start: 0;
+    border-radius: 0;
+    margin-inline: calc(-1 * var(--page-gutter));
+    padding-inline: var(--page-gutter);
+  }
+
+  body.sable-remote-theme .timeline-content .message.collapsed.mention-loud,
+  body.sable-remote-theme .timeline-content .message.collapsed.mention-silent {
+    padding-left: calc(var(--page-gutter) + 2.5rem + 1rem);
+  }
+
+  /* Mention pills. */
+  body.sable-remote-theme .timeline-content .formatted-body a[data-matrix-link],
+  body.sable-remote-theme .timeline-content .formatted-body [data-mx-room-mention],
+  body.sable-remote-theme .timeline-content .message.mention-loud a[data-matrix-link] {
+    background: var(--echo-pill-bg);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--echo-text);
+    font-weight: 400;
+    max-width: 15rem;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+
+  body.sable-remote-theme .timeline-content .message a[data-matrix-link='user'] {
+    background: color-mix(in oklab, var(--mention-color, var(--echo-text-semi)) 18%, transparent);
+    color: var(--mention-color, var(--echo-text-semi));
+  }
+
+  /* Inline code and code blocks. */
+  body.sable-remote-theme .message .formatted-body code {
+    background: var(--echo-code-bg);
+    border: 0;
+    border-radius: 0.25rem;
+    color: inherit;
+    padding: 0.125rem 0.25rem;
+  }
+
+  body.sable-remote-theme .message .code-block code {
+    background: none;
+    padding: 0;
+  }
+
+  body.sable-remote-theme .timeline-content .formatted-body .code-block {
+    background: var(--echo-code-bg);
+    border: 0;
+    border-radius: 0.25rem;
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .timeline-content .formatted-body .code-head {
+    background: transparent;
+    border-bottom: 1px solid var(--echo-hairline);
+    color: var(--echo-text-2);
+  }
+
+  body.sable-remote-theme .timeline-content .formatted-body blockquote {
+    border-left: 2px solid var(--echo-border);
+    padding-left: 0.5rem;
+  }
+
+  /* Replies: a static neutral spine, never per-sender. */
+  body.sable-remote-theme .timeline-content .reply-preview.reply-connected::before {
+    border-color: var(--echo-reply-border);
+    opacity: 1;
+  }
+
+  body.sable-remote-theme .timeline-content .reply-preview.reply-connected {
+    font-size: 0.875rem;
+  }
+
+  body.sable-remote-theme .timeline-content .reply-preview .reply-body {
+    color: var(--echo-text-semi);
+    filter: none;
+  }
+
+  body.sable-remote-theme .timeline-content .reply-preview:hover .reply-body {
+    color: var(--echo-text);
+  }
+
+  /* Reactions: small rounded-square chips on the base colour. */
+  body.sable-remote-theme .timeline-content .message .reactions {
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+  }
+
+  body.sable-remote-theme .timeline-content .reactions > .reaction,
+  body.sable-remote-theme .timeline-content .reactions > .add-reaction {
+    background: var(--echo-chat);
+    border: 1px solid var(--echo-border);
+    border-radius: 0.375rem;
+    color: var(--echo-text);
+    font-weight: 400;
+    gap: 0.25rem;
+    min-height: 1.625rem;
+    padding: 0 0.4375rem;
+  }
+
+  body.sable-remote-theme .timeline-content .reactions > .reaction:hover,
+  body.sable-remote-theme .timeline-content .reactions > .add-reaction:hover {
+    background: var(--echo-hover);
+  }
+
+  body.sable-remote-theme .timeline-content .reactions > .reaction[aria-pressed='true'] {
+    background: rgb(var(--echo-warm-rgb) / 12%);
+    border-color: rgb(var(--echo-warm-rgb) / 55%);
+  }
+
+  body.sable-remote-theme .timeline-content .reaction-key > em {
+    font-size: var(--font-size-small);
+    font-style: normal;
+  }
+
+  /* Read receipts: overlapping 1rem faces. */
+  body.sable-remote-theme .timeline-content .read-receipt-stack .receipt-face {
+    --avatar-size: 1rem;
+
+    border: 1px solid var(--echo-chat);
+    border-radius: 50%;
+    font-size: 0.5rem;
+  }
+
+  /* Day separator: a faint rule, the date in the body colour. */
+  body.sable-remote-theme .timeline-content .date-divider {
+    color: var(--echo-text);
+    font-size: 0.875rem;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+  }
+
+  body.sable-remote-theme .timeline-content .date-divider::before,
+  body.sable-remote-theme .timeline-content .date-divider::after {
+    border-top-color: currentcolor;
+    opacity: 0.2;
+  }
+
+  body.sable-remote-theme .timeline-content .date-divider > span {
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  /* Typing line above the composer. */
+  body.sable-remote-theme .timeline-content.timeline-content {
+    --timeline-foot-height: 2rem;
+  }
+
+  body.sable-remote-theme .timeline-content .timeline-foot {
+    align-items: end;
+    background: var(--echo-chat);
+    padding: 0 1.5rem;
+  }
+
+  body.sable-remote-theme .timeline-content .timeline-foot .typing {
+    color: var(--echo-text);
+    font-size: 0.8125rem;
+    gap: 0.375rem;
+    line-height: 1.5rem;
+    opacity: 0.45;
+  }
+
+  body.sable-remote-theme .timeline-content .timeline-foot .typing-dots {
+    gap: 0.125rem;
+  }
+
+  body.sable-remote-theme .timeline-foot .typing-dots i {
+    background: currentcolor;
+    height: 0.1875rem;
+    width: 0.1875rem;
+  }
+
+  /* "New messages": a flat rule in the unread colour. */
+  body.sable-remote-theme .timeline-content :is(.unread, .read-marker) {
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  body.sable-remote-theme .timeline-content :is(.unread, .read-marker)::before {
+    border-top: 1px solid var(--echo-unread-notify);
+    opacity: 0.6;
+  }
+
+  body.sable-remote-theme .timeline-content :is(.unread, .read-marker) > span {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: var(--echo-unread-notify);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    padding: 0;
+    text-transform: none;
+  }
+
+  /* The hover menu: base colour, 1px border, 2rem buttons. */
+  body.sable-remote-theme .timeline-content .message .message-actions {
+    background: var(--echo-chat);
+    border: 1px solid var(--echo-border);
+    border-radius: 0.5rem;
+    bottom: calc(100% - 0.75rem);
+    box-shadow: none;
+    color: var(--echo-text);
+    gap: 0.25rem;
+    inset-inline-end: 0.5rem;
+    padding: 0.125rem;
+  }
+
+  body.sable-remote-theme .message-actions .message-action-button.message-action-button {
+    --button-height: 2rem;
+
+    color: var(--echo-text);
+  }
+
+  /* Composer: a raised box with a soft shadow, quiet tools. */
+  body.sable-remote-theme .room-view .composer-stack {
+    --composer-gutter: 1.5rem;
+
+    border-top: 1px solid var(--echo-border);
+    margin: 0.5rem auto 0.25rem;
+    padding-top: 0.75rem;
+  }
+
+  body.sable-remote-theme .room-view .composer-shell > .composer {
+    background: var(--echo-composer);
+    border: 1px solid var(--echo-border);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem var(--echo-modal-shadow);
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .room-view .composer-shell > .composer:has([contenteditable='true']:focus) {
+    border-color: var(--echo-border);
+    box-shadow: 0 0 1rem var(--echo-modal-shadow);
+  }
+
+  body.sable-remote-theme .room-view .composer-row {
+    padding: 0.875rem 0.5rem;
+  }
+
+  body.sable-remote-theme .room-view .composer-row [contenteditable] {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  body.sable-remote-theme .composer-row :is(.composer-before, .composer-after) button {
+    opacity: 0.35;
+  }
+
+  body.sable-remote-theme .composer-row :is(.composer-before, .composer-after) button:hover {
+    opacity: 1;
+  }
+
+  body.sable-remote-theme .composer-row .composer-after > .composer-send.icon-button {
+    opacity: 0.5;
+  }
+}
+
+/* ---------- Right panels ---------- */
+@media (width >= 48rem) {
+  /* A column of its own, raised over the chat's right edge. */
+  body.sable-remote-theme .room-view aside:not(.member-user-list) {
+    background: var(--echo-roomlist);
+    border-left: 0;
+    box-shadow:
+      -1px 0 0 var(--echo-pane-edge),
+      -8px 0 24px var(--echo-pane-shadow);
+    color: var(--echo-text);
+    z-index: 3;
+  }
+
+  /* The header lines up with the room header. */
+  body.sable-remote-theme .room-view aside > .panel-header {
+    background: transparent;
+    border-bottom: 1px solid var(--echo-border);
+    min-height: var(--header-height);
+    padding: 0 0.25rem 0 0.5rem;
+  }
+
+  body.sable-remote-theme .room-view aside h2.title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0.25rem;
+  }
+
+  body.sable-remote-theme .room-view aside p.subtitle {
+    margin-left: 0.25rem;
+  }
+
+  body.sable-remote-theme .room-view aside .panel-header-button {
+    --button-height: 2.5rem;
+  }
+
+  /* Members: a borderless filter row with a rule under it. */
+  body.sable-remote-theme .members-drawer > .controls {
+    background: var(--echo-roomlist);
+    border-bottom: 1px solid var(--echo-border);
+    gap: 0;
+    padding: 0;
+  }
+
+  body.sable-remote-theme .members-drawer .filters {
+    padding: 0.25rem 0.5rem 0;
+  }
+
+  body.sable-remote-theme .members-drawer .controls > .member-search-input {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 0;
+    padding: 0.75rem 1rem 1rem;
+  }
+
+  body.sable-remote-theme .members-drawer .member-groups {
+    padding: 0.25rem 0;
+  }
+
+  body.sable-remote-theme .members-drawer .member-groups > .group-label {
+    color: var(--echo-section-ink);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.75rem 0.75rem 0.25rem;
+  }
+
+  body.sable-remote-theme .members-drawer .member-identity-row.member-identity-button {
+    border-radius: 0;
+    font-size: 1rem;
+    gap: 0.5rem;
+    min-height: 3.5rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  body.sable-remote-theme .members-drawer .member-identity-row.member-identity-button:hover {
+    background: var(--echo-hover);
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .members-drawer .member-identity-avatar > .avatar-root {
+    --avatar-size: 2.5rem;
+
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+
+  /* In light, member names are body-coloured. */
+  body.sable-remote-theme .members-drawer .member-name {
+    color: var(--echo-text);
+  }
+}
+
+/* ---------- Pop-ups, menus, dialogs, settings ---------- */
+@media (width >= 48rem) {
+  /* Profile card: a 14px radius, a firm border, round avatar. */
+  body.sable-remote-theme .profile-card.profile-card-popover {
+    --pill-primary-ground: var(--echo-primary);
+    --pill-primary-ink: var(--echo-on-primary);
+
+    border: 1px solid color-mix(in srgb, var(--echo-text) 32%, var(--echo-chat));
+    border-radius: 14px;
+    box-shadow:
+      0 12px 32px var(--echo-modal-shadow),
+      0 2px 8px var(--echo-modal-shadow);
+  }
+
+  /* The card is the base colour, not tinted by the avatar. */
+  body.sable-remote-theme .profile-card.profile-card-popover:is(.tinted, :not(.tinted)) {
+    --profile-card-ground: var(--echo-chat);
+    --profile-chip-line: var(--echo-button-hover);
+    --profile-hero-muted: var(--echo-text-2);
+    --profile-icon: var(--echo-text-2);
+    --profile-ink: var(--echo-text);
+    --profile-line: var(--echo-hairline);
+    --profile-panel-ground: var(--echo-chat);
+    --profile-text-muted: var(--echo-text-2);
+    --pill-primary-ground: var(--echo-primary);
+    --pill-primary-ink: var(--echo-on-primary);
+    --pill-primary-line: transparent;
+  }
+
+  body.sable-remote-theme .profile-card .profile-card-banner-fallback {
+    visibility: hidden;
+  }
+
+  /* No colour block behind the avatar: the base colour over Sable's cover. */
+  body.sable-remote-theme .profile-card .profile-card-cover:not(.has-banner) {
+    position: relative;
+  }
+
+  body.sable-remote-theme .profile-card .profile-card-cover:not(.has-banner)::after {
+    background: var(--echo-chat);
+    content: '';
+    inset: 0;
+    position: absolute;
+  }
+
+  body.sable-remote-theme .profile-card .avatar-root.profile-card-avatar {
+    border-radius: 50%;
+  }
+
+  body.sable-remote-theme .profile-card .profile-card-name {
+    font-size: 1.625rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  body.sable-remote-theme .profile-card .profile-card-user-id {
+    font-family: var(--font-family-mono);
+    font-size: 0.8125rem;
+  }
+
+  /* Card buttons: a ringed ghost, or filled for the primary action. */
+  body.sable-remote-theme .profile-card button.pill {
+    border: 0;
+    border-radius: 0.375rem;
+    box-shadow: inset 0 0 0 1px var(--echo-button-hover);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.45rem 0.8rem;
+  }
+
+  body.sable-remote-theme .profile-card button.pill.pill-icon-only {
+    padding: 0.45rem 0.5rem;
+  }
+
+  body.sable-remote-theme .profile-card button.pill.pill-primary {
+    background: var(--echo-primary);
+    box-shadow: none;
+    color: var(--echo-on-primary);
+  }
+
+  body.sable-remote-theme .profile-card button.pill:not(.pill-primary):hover {
+    background: var(--echo-hover);
+  }
+
+  /* Scrim: a lighter dim with the window behind it blurred. */
+  body.sable-remote-theme .dialog-backdrop[data-dialog-overlay] {
+    backdrop-filter: blur(20px) saturate(115%);
+    background: rgb(0 0 0 / 50%);
+  }
+
+  /* Dialog boxes: the base colour at a 1rem radius. */
+  body.sable-remote-theme .dialog-content.dialog-content-verification {
+    background: var(--echo-chat);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--echo-modal-shadow);
+    color: var(--echo-text);
+    padding: 1rem;
+  }
+
+  body.sable-remote-theme .dialog-content.dialog-content-settings {
+    background: var(--echo-chat);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--echo-modal-shadow);
+    color: var(--echo-text);
+  }
+
+  /* Settings: the section list on the room list colour, the page on the base. */
+  body.sable-remote-theme .dialog-content-settings .settings-shell {
+    background: var(--echo-roomlist);
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .dialog-content-settings .settings-content {
+    --surface-container: var(--echo-chat);
+    --surface-container-hover: var(--echo-hover);
+
+    background: var(--echo-chat);
+    color: var(--echo-text);
+  }
+
+  /* Menus: .5rem radius, 1px border, soft all-round shadow. */
+  body.sable-remote-theme .menu-surface {
+    --radius-outer: 0.5rem;
+    --menu-item-hover: var(--echo-hover);
+
+    background: var(--echo-chat);
+    border: 1px solid var(--echo-border);
+    box-shadow: 0 0 1rem var(--echo-modal-shadow);
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .menu-surface .menu-item {
+    --menu-item-gap: 0.5rem;
+    --menu-item-height: 2.25rem;
+    --menu-item-padding: 0.75rem;
+  }
+}
+
+/* ---------- Quick switcher (Ctrl/Cmd-K palette) ---------- */
+@media (width >= 48rem) {
+  body.sable-remote-theme .dialog-content.dialog-content-verification:has(> .palette) {
+    --palette-divider: color-mix(in srgb, var(--echo-text-semi) 40%, transparent);
+
+    animation: none;
+    background: var(--echo-composer);
+    border-radius: 0.5rem;
+    box-shadow:
+      inset 0 0 0 1px rgb(255 255 255 / 18%),
+      0 0 0 1px rgb(0 0 0 / 60%),
+      0 18px 40px rgb(0 0 0 / 45%),
+      0 55px 120px rgb(0 0 0 / 40%),
+      0 36px 100px rgb(255 228 132 / 6%);
+    max-width: min(48rem, 92vw);
+    padding: 0;
+    top: 11vh;
+    transform: translateX(-50%);
+    width: 48rem;
+  }
+
+  /* Gated on Sable's Reduce motion setting. */
+  html:not([data-reduced-motion='on']) body.sable-remote-theme .dialog-content.dialog-content-verification:has(> .palette)[data-state='open'] {
+    animation: echo-palette-in 0.16s cubic-bezier(0.2, 0.8, 0.3, 1);
+  }
+
+  /* A barely-there scrim: the room stays readable behind it. */
+  body.sable-remote-theme:has(.dialog-content > .palette) .dialog-backdrop[data-dialog-overlay] {
+    backdrop-filter: blur(3px) saturate(105%);
+    background: rgb(0 0 0 / 12%);
+  }
+
+  body.sable-remote-theme .dialog-content > .palette {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 56vh;
+    width: 100%;
+  }
+
+  body.sable-remote-theme .palette > .jump-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0;
+    min-height: 0;
+  }
+
+  /* The field: no box, large type, a search glyph before it. */
+  body.sable-remote-theme .palette .jump-list > .text-input.form-control {
+    background: transparent
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b0acaa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E")
+      1.25rem center / 1.375rem no-repeat;
+    border: 0;
+    border-bottom: 1px solid var(--palette-divider);
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--echo-text);
+    font-size: 1.375rem;
+    min-height: 0;
+    padding: 1.125rem 1.25rem 0.875rem 3.5rem;
+  }
+
+  body.sable-remote-theme .palette .jump-list > .text-input.form-control::placeholder {
+    color: var(--echo-text-2);
+  }
+
+  body.sable-remote-theme .palette .jump-list > .text-input.form-control:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  body.sable-remote-theme .palette .jump-list > .hint {
+    display: none;
+  }
+
+  body.sable-remote-theme .palette .jump-list > .heading {
+    color: var(--echo-text-semi);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.5rem 1.25rem 0.25rem;
+    text-transform: uppercase;
+  }
+
+  body.sable-remote-theme .palette .jump-list > .empty {
+    color: var(--echo-text-2);
+    margin: 0;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  body.sable-remote-theme .palette .jump-list > ul {
+    gap: 0;
+    max-height: none;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 0 0.5rem 0.375rem;
+  }
+
+  body.sable-remote-theme .palette .jump-list .option {
+    --menu-item-gap: 0.75rem;
+    --menu-item-height: 0;
+
+    border-radius: 0.375rem;
+    font-size: 0.9375rem;
+    padding: 0.5625rem 0.75rem;
+  }
+
+  body.sable-remote-theme .palette .jump-list .option:hover {
+    background: var(--echo-entry-hover);
+  }
+
+  body.sable-remote-theme .palette .jump-list .option.option[aria-selected='true'] {
+    background: var(--echo-entry-selected);
+  }
+
+  body.sable-remote-theme .palette .option .avatar-root.jump-avatar {
+    --avatar-size: 2rem;
+
+    border-radius: 50%;
+  }
+
+  body.sable-remote-theme .palette .option .avatar-root.jump-avatar.glyph {
+    background: var(--echo-entry-hover);
+    opacity: 1;
+  }
+
+  body.sable-remote-theme .palette .option .name {
+    color: var(--echo-text);
+  }
+
+  body.sable-remote-theme .palette .option .parent {
+    color: var(--echo-text-2);
+  }
+
+  body.sable-remote-theme .palette .option mark {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  body.sable-remote-theme .dialog-content > .palette > footer {
+    border-top: 1px solid var(--palette-divider);
+    padding: 0.375rem 0.5rem 0.5rem;
+  }
+}
+
+@keyframes echo-palette-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0.375rem) scale(0.98);
+  }
+}
+
+/* ---------- Loading and sign-in ---------- */
+@media (width >= 48rem) {
+  /* The sign-in pages scroll on their own, so short windows reach the buttons. */
+  body.sable-remote-theme main.auth-page {
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  body.sable-remote-theme .auth-page .auth-content {
+    grid-template-rows: clamp(7rem, calc((100dvh - 4rem) / 3), 18rem) auto;
+  }
+
+  /* Skeletons: a faint warm fill. */
+  body.sable-remote-theme .skeleton.skeleton {
+    --echo-sk-base: rgb(var(--echo-warm-rgb) / 7%);
+    --echo-sk-highlight: rgb(var(--echo-warm-rgb) / 16%);
+
+    background-color: var(--echo-sk-base);
+  }
+}
+
+@media (width >= 48rem) and (height < 45rem) {
+  body.sable-remote-theme .auth-page .auth-content {
+    grid-template-rows: clamp(5rem, 16dvh, 8rem) auto;
+  }
+}
+
+/* A light band sweeps across skeletons; under reduced motion only the fill stays. */
+@media (width >= 48rem) and (prefers-reduced-motion: no-preference) {
+  html:not([data-reduced-motion='on']) body.sable-remote-theme .skeleton.skeleton {
+    animation: echo-sk-sweep 1.6s linear infinite;
+    background-image: linear-gradient(
+      90deg,
+      var(--echo-sk-base) 0%,
+      var(--echo-sk-base) 40%,
+      var(--echo-sk-highlight) 50%,
+      var(--echo-sk-base) 60%,
+      var(--echo-sk-base) 100%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+@keyframes echo-sk-sweep {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
