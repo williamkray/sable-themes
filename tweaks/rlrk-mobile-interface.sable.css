@@ -103,6 +103,10 @@ tags: mobile, bubbles, timeline, layout
     margin-block-start: var(--space-100);
     padding: var(--space-200) var(--space-300);
     width: fit-content;
+    /* Own captions inherit end-alignment from their row; align to the text's
+       own reading direction instead, like regular bubbles. */
+    text-align: start;
+    unicode-bidi: plaintext;
   }
 
   /* Newer Sable tints own bubbles, so own captions follow suit there; older

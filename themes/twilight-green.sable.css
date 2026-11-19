@@ -101,3 +101,9 @@ body.sable-remote-theme {
   --mx-uc-7: #f0c674;
   --mx-uc-8: #a54242;
 }
+
+/* The default grey quote bar nearly vanishes on the olive own-bubble tint;
+   use the accent line color there instead. */
+body.sable-remote-theme .message.layout-bubble.own .formatted-body blockquote {
+  border-left-color: var(--sable-primary-container-line);
+}
